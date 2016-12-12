@@ -1657,7 +1657,7 @@ div.slide1-bg {
     height: 100%;
     top: 0%;
     left: 0%;
-    background-image: url(../img/welcome-img.jpg);
+    /*background-image: url(../img/welcome-img.jpg);*/
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1707,7 +1707,7 @@ div.slide1-bg2-specialoffers {
     height: 100%;
     top: 0%;
     left: 0%;
-    background-image: url(../img/mp-slide3.jpg);
+    /*background-image: url(../img/mp-slide3.jpg);*/
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1735,7 +1735,7 @@ div.slide1-bg2-contactus {
     height: 100%;
     top: 0%;
     left: 0%;
-    background-image: url(../img/mp-slide3.jpg);
+    /*background-image: url(../img/mp-slide3.jpg);*/
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1780,7 +1780,7 @@ div.slide1-bg div.slide1-bg2 {
     height: 100%;
     top: 0%;
     left: 0%;
-    background-image: url(../img/welcome-img-night.jpg);
+    /*background-image: url(../img/welcome-img-night.jpg);*/
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1899,7 +1899,7 @@ body.de #slide2 div.field2 {
 
 
 #slide3 {
-    background-image: url(../img/slide-room.jpg);
+    /*background-image: url(../img/slide-room.jpg);*/
     background-position: 70% 50%;
 }
 
@@ -2068,7 +2068,7 @@ div.slide4-bg {
     height: 100%;
     top: 0px;
     left: 0px;
-    background-image: url(../img/infrastucture-img.jpg);
+    /*background-image: url(../img/infrastucture-img.jpg);*/
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -5200,7 +5200,7 @@ div.bg-img-SDH {
 
 
 div.why-choose-us div.bg-img-SDH {
-    background-image: url(../img/slide-room.jpg);
+    /*background-image: url(../img/slide-room.jpg);*/
     background-position: 70% 50%;
 }
 
