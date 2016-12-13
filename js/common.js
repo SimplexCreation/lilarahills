@@ -3,6 +3,7 @@ function getRandomInt(a, b) {
 }
 jQuery(function (a) {
     function d() {
+        console.log("d")
         b.iOS() || (a("div.site-container0").addClass("baron").addClass("baron__root").addClass("baron__clipper").addClass("_macosx"), a("div.site-container").addClass("baron__scroller"), baron({
             root: ".baron",
             scroller: ".baron__scroller",
@@ -13,6 +14,7 @@ jQuery(function (a) {
     }
 
     function e(a) {
+        console.log("e")
         if (a.is("textarea"))return "" == a.val() ? f(a) : g(a);
         if ("email" == a.attr("type"))return /^[A-Za-z0-9\.-]+@[A-Za-z0-9\.-]+(\.\w{2,4})+$/.test(a.val()) ? g(a) : f(a);
         if ("tel" == a.attr("type")) {
@@ -26,14 +28,17 @@ jQuery(function (a) {
     }
 
     function f(a) {
+        console.log("f")
         return a.css({border: "1px solid #c1574c"}), notErrors = !1, !1
     }
 
     function g(a) {
+        console.log("g")
         return a.removeAttr("style"), !0
     }
 
     function h(b) {
+        console.log("h")
         if ("open" == b) {
             a("div.mainmenu-wrapper").css({display: "block"}), a("#blockContent").css({display: "block"}), a("div.mainmenu-wrapper").oneTime("60ms", function () {
                 a("body").addClass("mainmenu-open"), a("div.mainmenu-wrapper").oneTime("300ms", function () {
@@ -57,6 +62,7 @@ jQuery(function (a) {
     }
 
     function i(b) {
+        console.log("i")
         if ("open" == b) {
             a("div.bookingmenu-wrapper").css({display: "block"}), a("#blockContent").css({display: "block"}), a("div.bookingmenu-wrapper").oneTime("60ms", function () {
                 a("body").addClass("booking"), a("div.bookingmenu-wrapper").oneTime("300ms", function () {
@@ -80,18 +86,21 @@ jQuery(function (a) {
     }
 
     function k() {
+        console.log("k")
         a("div.swiper-slide video").each(function () {
             a(this)[0].currentTime = 0, a(this)[0].pause()
         })
     }
 
     function l() {
+        console.log("l")
         a("video").each(function () {
             a(this)[0].pause()
         })
     }
 
     function m(b) {
+        console.log("m")
         var c = b.find("video");
         c.each(function () {
             a(this)[0].pause(), this.pause(), a("source", a(this)).attr("src", ""), delete this, a(this).remove()
@@ -99,10 +108,12 @@ jQuery(function (a) {
     }
 
     function n() {
+        console.log("n")
         a("ul.mp-mainmenu a").removeClass("loading"), a("div.btn-slider a").removeClass("btn-loading")
     }
 
     function u(a) {
+        console.log("u")
         var b, c = [];
         for (b = 0; b < a.length; c.push(a[b].getAttribute("src")), b++);
         for (b = 0; b < a.length; a[b].setAttributeNS(null, "src", ""), b++);
@@ -110,6 +121,7 @@ jQuery(function (a) {
     }
 
     function w() {
+        console.log("w")
         var b = Math.ceil(100 * s / v.length);
         a("div.perc-of-loading").text(b), console.log(b);
         var c = b - 100;
@@ -124,6 +136,7 @@ jQuery(function (a) {
     }
 
     function x(b) {
+        console.log("x")
         var c = 1, d = u(b);
         b.each(function () {
             a(this).load(function () {
@@ -134,6 +147,7 @@ jQuery(function (a) {
     }
 
     function y(a) {
+        console.log("y")
         var b = a.split("/");
         b.shift("");
         for (var c = 0; c < langArr.length; c++)if (b[0] == langArr[c]) {
@@ -144,6 +158,7 @@ jQuery(function (a) {
     }
 
     function z(b) {
+        console.log("z")
         if (b)var c = b; else var c = window.location.href.toString().split(window.location.host)[1];
         var d = y(c);
         return d = d.split("?o=hello"), d = d[0], a("ul.lang-menu li a").each(function () {
@@ -152,11 +167,13 @@ jQuery(function (a) {
     }
 
     function B(b, c) {
+        console.log("B")
         var d = b, e = a("div.site-container"), f = 0, g = f + e.height(), h = d.offset().top, i = h + d.height(), j = c === !0 ? i : h, k = c === !0 ? h : i;
         return k <= g && j >= f
     }
 
     function C(b) {
+        console.log("C")
         var c = a("div.site-container"), d = b.find("div.subBlock"), e = b.find("video");
         d.each(function (b) {
             B(a(this), !0) && a(this).addClass("already-visible")
@@ -171,11 +188,13 @@ jQuery(function (a) {
     }
 
     function D(a, b, c) {
+        console.log("D")
         var d = a.split("/");
         "why-choose-us" == d[1] ? L(b, c) : "contacts" == d[1] ? M(b, c) : "apartments" == d[1] ? d[2].length > 0 ? G(b, c) : E(b, c) : "special-offers" == d[1] ? H(b, c) : "useful-info" == d[1] ? I(b, c) : "infrastructure" == d[1] && K(b, c)
     }
 
     function E(b, c) {
+        console.log("E")
         a(c + " div.section-content").html(b), a("body").oneTime("300ms", function () {
             a("div.apartments-bg").addClass("activateAnimation")
         }), a(window).on("resize", function () {
@@ -210,6 +229,7 @@ jQuery(function (a) {
     }
 
     function G(b, c) {
+        console.log("G")
         a(c + " div.section-content").html(b), a(window).bind("resize").trigger("resize"), a("body").oneTime("300ms", function () {
             a("div.apartments-bg").addClass("activateAnimation"), C(a("div.apartments-bg")), a(c + " div.apartment-photogallery .swiper-container2").length > 0 && (F = void 0, F = new Swiper(c + " div.apartment-photogallery .swiper-container2", {
                 direction: "horizontal",
@@ -239,6 +259,7 @@ jQuery(function (a) {
     }
 
     function H(b, c) {
+        console.log("H")
         a(c + " div.section-content").html(b), a("body").oneTime("300ms", function () {
             a("div.apartments-bg").addClass("activateAnimation"), C(a("div.apartments-bg"))
         }), a("div.OB-info-block-cont div.OB-info1").each(function () {
@@ -247,6 +268,7 @@ jQuery(function (a) {
     }
 
     function I(b, c) {
+        console.log("I")
         a(c + " div.section-content").html(b);
         var d = a("#countries").val();
         J(d), a("body").oneTime("300ms", function () {
@@ -260,6 +282,7 @@ jQuery(function (a) {
     }
 
     function J(b) {
+        console.log("J")
         a.ajax({
             type: "GET",
             url: "/ajax_updateUsefullInformation.php",
@@ -272,6 +295,7 @@ jQuery(function (a) {
     }
 
     function K(b, c) {
+        console.log("K")
         infrastructureMarkers = [], map2 = void 0, a(c + " div.section-content").html(b), a("body").oneTime("300ms", function () {
             a("div.apartments-bg").addClass("activateAnimation")
         }), a(window).bind("resize", function () {
@@ -294,6 +318,7 @@ jQuery(function (a) {
     }
 
     function L(c, d) {
+        console.log("L")
         a(d + " div.section-content").html(c), a(window).bind("resize").trigger("resize"), b.any() && a("video").each(function () {
             a(this).remove()
         }), a("body").oneTime("1200ms", function () {
@@ -304,6 +329,7 @@ jQuery(function (a) {
     }
 
     function M(b, c) {
+        console.log("M")
         a(c + " div.section-content").html(b), a(window).bind("resize").trigger("resize"), a("body").oneTime("300ms", function () {
             a("div.contacts-bg").addClass("activateAnimation")
         }), C(a("div.contacts-bg")), a("div.google-map-btn").oneTime("1200ms", function () {
@@ -337,6 +363,7 @@ jQuery(function (a) {
     }
 
     function Q(b) {
+        console.log("Q")
         var c;
         if (b && a.isArray(b) ? (A = y(b[1]), b = b[0]) : A = z(), void 0 == b && (b = "forward"), a("body").addClass("loadingAndAnimatingSection"), "firstTime" !== b && "pageReloaded" !== b) {
             a("#blockContent").css({display: "block"});
@@ -727,16 +754,19 @@ jQuery(function (a) {
     }
 
     function R(b) {
+        console.log("R")
         a("div.popup-mainmenu-wrapper-top ul.mp-mainmenu li").removeClass("act"), a("div.popup-mainmenu-wrapper-top ul.mp-mainmenu li a").each(function () {
             a(this).attr("href") == b && a(this).parent("li").addClass("act")
         })
     }
 
     function S(b, c) {
+        console.log("S")
         0 == N ? N = 1 : N++, window.history.pushState({title: b, url: c, num: N}, b, c), a("title").html(b)
     }
 
     function T(a, b) {
+        console.log("T")
         0 == N ? N = 1 : N++, window.history.replaceState({title: a, url: b, num: N}, a, b)
     }
 
