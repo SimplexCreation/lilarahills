@@ -742,14 +742,15 @@ jQuery(function (a) {
                 display: "block"
             }), a("body").addClass("slide1");
             var d = a("body").data("lang");
-            a.ajax({
-                type: "GET",
-                url: "/" + d + A + "?ajaxRequest=true",
-                data: {urla: "/" + d + A},
-                cache: !1
-            }).done(function (a) {
-                D(A, a, "div.site-content-slide1")
-            })
+
+            // a.ajax({
+            //     type: "GET",
+            //     url: "/" + d + A + "?ajaxRequest=true",
+            //     data: {urla: "/" + d + A},
+            //     cache: !1
+            // }).done(function (a) {
+            //     D(A, a, "div.site-content-slide1")
+            // })
         }
     }
 
