@@ -3001,7 +3001,7 @@ div.btn-green  {
 
 
 div.btn-green div.btn-bg, div.btn-slider div.btn-bg {
-    background-color: rgba(56, 59, 222, 0.39); /* color on animation */
+    background-color: #5ecdb3; /* color on animation */
 }
 
 div.btn-green div.btn-text {
