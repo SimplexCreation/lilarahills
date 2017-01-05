@@ -818,7 +818,7 @@ jQuery(function (a) {
     }), a("#subminBooking").click(function () {
         "" == a("#arrivalDate").val() ? f(a("#arrivalDate")) : g(a("#arrivalDate")), "" == a("#departureDate").val() ? f(a("#departureDate")) : g(a("#departureDate"));
         var b = a("#apartmentId").val();
-        "" !== a("#departureDate").val() && "" !== a("#arrivalDate").val() && (apartmentIdLine = b.length > 0 ? "&promotion_code=" + b : "", window.open("https://app.thebookingbutton.com/properties/reveltonsuites?utf8=%E2%9C%93&locale=" + j + apartmentIdLine + "&currency=EUR&check_in_date=" + a("#arrivalDate").val() + "&check_out_date=" + a("#departureDate").val(), "_blank"))
+        "" !== a("#departureDate").val() && "" !== a("#arrivalDate").val() && (apartmentIdLine = b.length > 0 ? "&promotion_code=" + b : "");
     });
     var o, p, q = !1;
     a(window).bind("resize", function () {
