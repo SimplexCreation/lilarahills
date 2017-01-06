@@ -28,7 +28,26 @@
             display:none;
         }
 
+        #scrolling { /* Carousel Frame */
+            overflow: hidden;
+        }
+
+        .ulscroll {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            position: absolute;
+            -webkit-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        .liscroll {
+            float: left;
+        }
+
     </style>
+
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style media="" data-href="https://fonts.googleapis.com/css?family=Playfair+Display:400italic&subset=latin,latin-ext,cyrillic">/* cyrillic */
@@ -103,6 +122,11 @@
                         console.log("to")
                     }
                 }, 200);
+
+                if(".slide1-bg2-packages"==segmentName)
+                {
+
+                }
 
 
 
@@ -254,115 +278,159 @@
 
                                         <!-- packages -->
                                         <div class="slide1-bg2-packages">
-                                            <div style="margin-top: 10px" class="bs-example" data-example-id="thumbnails-with-custom-content">
-                                                <div style="margin-right: 2px; margin-top: 116px;" class="row">
-                                                    <div class="col-sm-6 col-md-4">
-                                                        <div class="thumbnail">
-                                                            <img alt="100%x200" src="img/pakage1.jpeg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
-                                                            <div class="caption">
-                                                                <h3>Hipster</h3>
-                                                                <p style="font-family: 'Aref Ruqaa', serif;">Connect with the nature. A cold touch of wind. Relaxing landscape</p>
-                                                                <p style="background: rgba(255, 0, 0, 0.27);">$145</p>
-                                                                <p>
-                                                                    <a href="#" class="btn btn-danger" role="button">Enquire</a>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6 col-md-4">
-                                                        <div class="thumbnail">
-                                                            <img alt="100%x200" src="img/pakage2.jpeg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
-                                                            <div class="caption">
-                                                                <h3>Family</h3>
-                                                                <p style="font-family: 'Aref Ruqaa', serif;">Connect with the nature. A cold touch of wind. Relaxing landscape</p>
-                                                                <p style="background: rgba(255, 0, 0, 0.27);">$285</p>
-                                                                <p>
-                                                                    <a href="#" class="btn btn-danger" role="button">Enquire</a>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6 col-md-4">
-                                                        <div class="thumbnail">
-                                                            <img alt="100%x200" src="img/pakage3.jpeg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
-                                                            <div class="caption">
-                                                                <h3>Weekend</h3>
-                                                                <p style="font-family: 'Aref Ruqaa', serif;">Connect with the nature. A cold touch of wind. Relaxing landscape</p>
-                                                                <p style="background: rgba(255, 0, 0, 0.27);">$800</p>
-                                                                <p>
-                                                                    <a href="#" class="btn btn-danger" role="button">Enquire</a>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6 col-md-4">
-                                                        <div class="thumbnail">
-                                                            <img alt="100%x200" src="img/pakage3.jpeg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
-                                                            <div class="caption">
-                                                                <h3>Meetings & Workshops</h3>
-                                                                <p style="font-family: 'Aref Ruqaa', serif;">Connect with the nature. A cold touch of wind. Relaxing landscape</p>
-                                                                <p style="background: rgba(255, 0, 0, 0.27);">$800</p>
-                                                                <p><a href="#" class="btn btn-danger" role="button">Enquire</a></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6 col-md-4">
-                                                        <div class="thumbnail">
-                                                            <div class="caption">
-                                                                <h3>Celebrations</h3>
-                                                            </div>
-                                                            <img alt="100%x200" src="img/pakage3.jpeg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
-                                                            <div class="caption">
-                                                                <h3>Weddings</h3>
-                                                                <p style="font-family: 'Aref Ruqaa', serif;">Connect with the nature. A cold touch of wind. Relaxing landscape</p>
-                                                                <p style="background: rgba(255, 0, 0, 0.27);">$800</p>
-                                                                <p><a href="#" class="btn btn-danger" role="button">Enquire</a></p>
-                                                            </div>
-                                                            <img alt="100%x200" src="img/pakage3.jpeg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
-                                                            <div class="caption">
-                                                                <h3>Great Parties</h3>
-                                                                <p style="font-family: 'Aref Ruqaa', serif;">Connect with the nature. A cold touch of wind. Relaxing landscape</p>
-                                                                <p style="background: rgba(255, 0, 0, 0.27);">$800</p>
-                                                                <p><a href="#" class="btn btn-danger" role="button">Enquire</a></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6 col-md-4">
-                                                        <div class="thumbnail">
-                                                            <div class="caption">
-                                                                <h3>Food</h3>
-                                                            </div>
-                                                            <img alt="100%x200" src="img/pakage3.jpeg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
-                                                            <div class="caption">
-                                                                <h3>The Glasshouse</h3>
-                                                                <p style="font-family: 'Aref Ruqaa', serif;">Connect with the nature. A cold touch of wind. Relaxing landscape</p>
-                                                                <p style="background: rgba(255, 0, 0, 0.27);">$800</p>
-                                                                <p><a href="#" class="btn btn-danger" role="button">Enquire</a></p>
-                                                            </div>
-                                                            <img alt="100%x200" src="img/pakage3.jpeg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
-                                                            <div class="caption">
-                                                                <h3>The Terrace</h3>
-                                                                <p style="font-family: 'Aref Ruqaa', serif;">Connect with the nature. A cold touch of wind. Relaxing landscape</p>
-                                                                <p style="background: rgba(255, 0, 0, 0.27);">$800</p>
-                                                                <p><a href="#" class="btn btn-danger" role="button">Enquire</a></p>
-                                                            </div>
-                                                            <img alt="100%x200" src="img/pakage3.jpeg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
-                                                            <div class="caption">
-                                                                <h3>The Rose"</h3>
-                                                                <p style="font-family: 'Aref Ruqaa', serif;">Connect with the nature. A cold touch of wind. Relaxing landscape</p>
-                                                                <p style="background: rgba(255, 0, 0, 0.27);">$800</p>
-                                                                <p><a href="#" class="btn btn-danger" role="button">Enquire</a></p>
-                                                            </div>
-                                                            <img alt="100%x200" src="img/pakage3.jpeg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
-                                                            <div class="caption">
-                                                                <h3>T BAR</h3>
-                                                                <p style="font-family: 'Aref Ruqaa', serif;">Connect with the nature. A cold touch of wind. Relaxing landscape</p>
-                                                                <p style="background: rgba(255, 0, 0, 0.27);">$800</p>
-                                                                <p><a href="#" class="btn btn-danger" role="button">Enquire</a></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                             <div style="margin-top: 10px" class="bs-example" data-example-id="thumbnails-with-custom-content">
+                                                 <div style="margin-right: 2px; margin-top: 55px;" class="row">
+                                                     <h6>CELEBRATIONS</h6>
+                                                     <div class="col-xs-6">
+                                                         <div class="media">
+                                                             <div class="media-left">
+                                                                 <a href="#">
+                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                 </a>
+                                                             </div>
+                                                             <div class="media-body">
+                                                                 <h4 class="media-heading">GREAT PARTIES</h4>
+
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-xs-6">
+                                                         <div class="media">
+                                                             <div class="media-left">
+                                                                 <a href="#">
+                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                 </a>
+                                                             </div>
+                                                             <div class="media-body">
+                                                                 <h4 class="media-heading">WEDDINGS</h4>
+
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                 <div style="margin-right: 2px;" class="row">
+                                                     <h6>FOOD</h6>
+                                                     <div class="col-xs-6">
+                                                         <div class="media">
+                                                             <div class="media-left">
+                                                                 <a href="#">
+                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                 </a>
+                                                             </div>
+                                                             <div class="media-body">
+                                                                 <h4 class="media-heading">THE TERRACE</h4>
+
+                                                             </div>
+                                                         </div>
+                                                         <div class="media">
+                                                             <div class="media-left">
+                                                                 <a href="#">
+                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                 </a>
+                                                             </div>
+                                                             <div class="media-body">
+                                                                 <h4 class="media-heading">T BAR</h4>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-xs-6">
+                                                         <div class="media">
+                                                             <div class="media-left">
+                                                                 <a href="#">
+                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                 </a>
+                                                             </div>
+                                                             <div class="media-body">
+                                                                 <h4 class="media-heading">THE ROSE</h4>
+                                                             </div>
+                                                         </div>
+                                                         <div class="media">
+                                                             <div class="media-left">
+                                                                 <a href="#">
+                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                 </a>
+                                                             </div>
+                                                             <div class="media-body">
+                                                                 <h4 class="media-heading">THE GLASSHOUSE</h4>
+
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                 <div style="margin-right: 2px; " class="row">
+                                                     <H6>FAMILIES</H6>
+                                                     <div class="col-xs-6">
+                                                         <div class="media">
+                                                             <div class="media-left">
+                                                                 <a href="#">
+                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                 </a>
+                                                             </div>
+                                                             <div class="media-body">
+                                                                 <h4 class="media-heading">FAMILY ROOMS</h4>
+                                                             </div>
+                                                         </div>
+                                                         <div class="media">
+                                                             <div class="media-left">
+                                                                 <a href="#">
+                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                 </a>
+                                                             </div>
+                                                             <div class="media-body">
+                                                                 <h4 class="media-heading">KIDS ACTIVITIES</h4>
+                                                             </div>
+                                                         </div>
+                                                         <div class="media">
+                                                             <div class="media-left">
+                                                                 <a href="#">
+                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                 </a>
+                                                             </div>
+                                                             <div class="media-body">
+                                                                 <h4 class="media-heading">NEARBY ATTRACTIONS</h4>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-xs-6">
+                                                         <div class="media">
+                                                             <div class="media-left">
+                                                                 <a href="#">
+                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                 </a>
+                                                             </div>
+                                                             <div class="media-body">
+                                                                 <h4 class="media-heading">FOOD FOR KIDS</h4>
+                                                             </div>
+                                                         </div>
+                                                         <div class="media">
+                                                             <div class="media-left">
+                                                                 <a href="#">
+                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                 </a>
+                                                             </div>
+                                                             <div class="media-body">
+                                                                 <h4 class="media-heading">OFFERS</h4>
+                                                             </div>
+                                                         </div>
+                                                         <div class="media">
+                                                             <div class="media-left">
+                                                                 <a href="#">
+                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                 </a>
+                                                             </div>
+                                                             <div class="media-body">
+                                                                 <h4 class="media-heading">YOUR HONEYMOON</h4>
+                                                             </div>
+                                                         </div>
+
+                                                     </div>
+                                                 </div>
+                                                 <div style="margin-right: 2px; " class="row">
+                                                 <H6>GALLERY , MEETINGS & WORKSHOPS</H6>
+                                                 </div>
+                                                 <!--<div style="margin-right: 2px; margin-top: 55px;" class="row">-->
+                                                     <!--<h6></h6>-->
+                                                 <!--</div>-->
                                             </div>
                                         </div>
                                     </div>
