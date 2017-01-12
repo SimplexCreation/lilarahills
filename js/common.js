@@ -2,6 +2,7 @@ function getRandomInt(a, b) {
     return Math.floor(Math.random() * (b - a + 1)) + a
 }
 jQuery(function (a) {
+    window.Aa = a
     function d() {
         console.log("d")
         b.iOS() || (a("div.site-container0").addClass("baron").addClass("baron__root").addClass("baron__clipper").addClass("_macosx"), a("div.site-container").addClass("baron__scroller"), baron({
@@ -38,6 +39,7 @@ jQuery(function (a) {
     }
 
     function h(b) {
+        window.Bb = b
         console.log("h")
         if ("open" == b) {
             a("div.mainmenu-wrapper").css({display: "block"}), a("#blockContent").css({display: "block"}), a("div.mainmenu-wrapper").oneTime("60ms", function () {
@@ -49,7 +51,10 @@ jQuery(function (a) {
             }), a("div.mainmenu-bg").removeClass("mainmenu-bg1").removeClass("mainmenu-bg2").removeClass("mainmenu-bg3").removeClass("mainmenu-bg4");
             var c = getRandomInt(1, 4);
             a("div.mainmenu-bg").addClass("mainmenu-bg" + c)
+            console.log("Calling if")
         }
+        console.log("...")
+
         "close" == b && (a("#blockContent").css({display: "block"}), a("div.mainmenu-wrapper").oneTime("300ms", function () {
             a("div.logo-mainmenu-btn").removeClass("position-openedmenu")
         }), a("body").removeClass("mainmenu-open"), a("div.mainmenu-wrapper").oneTime("1s", function () {
@@ -59,7 +64,7 @@ jQuery(function (a) {
         }), a("body").removeClass("mainmenu-open"), a("div.mainmenu-wrapper").css({opacity: "0"}), a("div.mainmenu-wrapper").oneTime("30ms", function () {
             a("div.mainmenu-wrapper").css({display: "none"}), a("div.mainmenu-wrapper").css({opacity: "1"})
         }))
-    }
+        }
 
     function i(b) {
         console.log("i")
@@ -363,7 +368,7 @@ jQuery(function (a) {
     }
 
     function Q(b) {
-        console.log("Q")
+        console.log("QQ")
         var c;
         if (b && a.isArray(b) ? (A = y(b[1]), b = b[0]) : A = z(), void 0 == b && (b = "forward"), a("body").addClass("loadingAndAnimatingSection"), "firstTime" !== b && "pageReloaded" !== b) {
             a("#blockContent").css({display: "block"});
@@ -822,6 +827,7 @@ jQuery(function (a) {
     });
     var o, p, q = !1;
     a(window).bind("resize", function () {
+
         if ("yes" !== o && "no" !== o)var b = !0;
         o = a("div.mp-slider").hasClass("sliderDisabled") ? "yes" : "no", a(window).width() <= 900 || a(window).height() <= 450 || a(window).width() < a(window).height() ? a("div.mp-slider").addClass("sliderDisabled") : a("div.mp-slider").removeClass("sliderDisabled"), a("body").hasClass("mainpage") && a("div.mp-slider").hasClass("sliderDisabled") && "no" == o && (console.log("disable 309"), b || (p.destroy(!0, !0), k(), q = !1)), (!a("div.mp-slider").hasClass("sliderDisabled") && "yes" == o || b && !a("div.mp-slider").hasClass("sliderDisabled")) && a("div.mp-slider").length > 0 && a("body").hasClass("mainpage") && (console.log("eneable slider 328"), p = new Swiper("div.mp-slider .swiper-container", {
             direction: "vertical",

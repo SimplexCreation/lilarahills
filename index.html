@@ -98,6 +98,26 @@
             console.log("previousSegment : " + previousSegment)
             function loadSegment(segmentName)
             {
+
+
+//
+                if(!$("#responsivediv").hasClass( "position-mainpage" ))
+                {
+                    console.log("...")
+                    "close" == "close" && (window.Aa("#blockContent").css({display: "block"}), window.Aa("div.mainmenu-wrapper").oneTime("300ms", function () {
+                        window.Aa("div.logo-mainmenu-btn").removeClass("position-openedmenu")
+                    }), window.Aa("body").removeClass("mainmenu-open"), window.Aa("div.mainmenu-wrapper").oneTime("1s", function () {
+                        window.Aa("div.mainmenu-wrapper").css({display: "none"}), window.Aa("#blockContent").css({display: "none"})
+                    })), "closeStatic" == window.Bb && (window.Aa("div.mainmenu-wrapper").oneTime("100ms", function () {
+                        window.Aa("div.logo-mainmenu-btn").removeClass("position-openedmenu")
+                    }), window.Aa("body").removeClass("mainmenu-open"), window.Aa("div.mainmenu-wrapper").css({opacity: "0"}), window.Aa("div.mainmenu-wrapper").oneTime("30ms", function () {
+                        window.Aa("div.mainmenu-wrapper").css({display: "none"}), window.Aa("div.mainmenu-wrapper").css({opacity: "1"})
+                    }))
+                }
+
+
+//
+
                  if(previousSegment!="--")
                     {
                         console.log("setting " + previousSegment + " visibility to false")
@@ -198,6 +218,20 @@
 
             <div class="site-container0">
                 <div class="site-container">
+
+                    <!--responsive-->
+                    <div id="responsivediv" class="logo-mainmenu-btn Pposition-mainpage Pposition-openedmenu">
+                        <div class="revlton-icon">
+                        </div>
+                        <div class="mainmenu-btn">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                            <div class="mainmenu-btn-bg"></div>
+                        </div>
+                    </div>
+                    <!--  -->
+
                     <div class="mainpage-body">
                         <div class="mp-left-block-top">
                             <div class="mp-logo"></div>
@@ -206,9 +240,9 @@
                                     <span class="hver">Home</span><div class="mm-item-underline"><div></div></div>
                                 </li>
 
-                                <li style="cursor: pointer" onclick="loadSegment('.why-choose-us')">
-                                    <span class="hver">Why choose us?</span><div class="mm-item-underline"><div></div></div>
-                                </li>
+                                <!--<li style="cursor: pointer" onclick="loadSegment('.why-choose-us')">-->
+                                    <!--<span class="hver">Why choose us?</span><div class="mm-item-underline"><div></div></div>-->
+                                <!--</li>-->
                                 <li  style="cursor: pointer" onclick="loadSegment('.slide1-bg2-apartment')">
                                     <span class="hver">Rooms</span><div class="mm-item-underline"><div></div></div>
                                 </li>
@@ -325,7 +359,7 @@
                                                          <div class="media">
                                                              <div class="media-left">
                                                                  <a href="#">
-                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                     <img class="media-object" src="https://maxcdn.icons8.com/Share/icon/Food//bar1600.png" width="64px" alt="...">
                                                                  </a>
                                                              </div>
                                                              <div class="media-body">
@@ -337,7 +371,7 @@
                                                          <div class="media">
                                                              <div class="media-left">
                                                                  <a href="#">
-                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                     <img class="media-object" src="https://d30y9cdsu7xlg0.cloudfront.net/png/85437-200.png" width="64px" alt="...">
                                                                  </a>
                                                              </div>
                                                              <div class="media-body">
@@ -347,7 +381,7 @@
                                                          <div class="media">
                                                              <div class="media-left">
                                                                  <a href="#">
-                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                     <img class="media-object" src="https://cdn1.iconfinder.com/data/icons/cultivate/500/glasshouse-512.png" width="64px" alt="...">
                                                                  </a>
                                                              </div>
                                                              <div class="media-body">
@@ -363,7 +397,7 @@
                                                          <div class="media">
                                                              <div class="media-left">
                                                                  <a href="#">
-                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                     <img class="media-object" src="https://cdn0.iconfinder.com/data/icons/realty-1/512/family-512.png" width="64px" alt="...">
                                                                  </a>
                                                              </div>
                                                              <div class="media-body">
@@ -373,7 +407,7 @@
                                                          <div class="media">
                                                              <div class="media-left">
                                                                  <a href="#">
-                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                     <img class="media-object" src="https://www.tworiversymca.org/assets/images/gallery/youth_icon.png" width="64px" alt="...">
                                                                  </a>
                                                              </div>
                                                              <div class="media-body">
@@ -383,7 +417,7 @@
                                                          <div class="media">
                                                              <div class="media-left">
                                                                  <a href="#">
-                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                     <img class="media-object" src="https://cdn3.iconfinder.com/data/icons/map/500/nearby-512.png" width="64px" alt="...">
                                                                  </a>
                                                              </div>
                                                              <div class="media-body">
@@ -395,7 +429,7 @@
                                                          <div class="media">
                                                              <div class="media-left">
                                                                  <a href="#">
-                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                     <img class="media-object" src="https://cdn2.iconfinder.com/data/icons/kids-glyph-black/2048/5505_-_Eating_Food-512.png" width="64px" alt="...">
                                                                  </a>
                                                              </div>
                                                              <div class="media-body">
@@ -405,7 +439,7 @@
                                                          <div class="media">
                                                              <div class="media-left">
                                                                  <a href="#">
-                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                     <img class="media-object" src="https://image.freepik.com/free-icon/offer-label-ios-7-interface-symbol_318-35360.jpg" width="64px" alt="...">
                                                                  </a>
                                                              </div>
                                                              <div class="media-body">
@@ -415,7 +449,7 @@
                                                          <div class="media">
                                                              <div class="media-left">
                                                                  <a href="#">
-                                                                     <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTk3NGNiODdmOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1OTc0Y2I4N2Y4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy41NDY4NzUiIHk9IjM2LjUiPjY0eDY0PC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="...">
+                                                                     <img class="media-object" src="https://cdn4.iconfinder.com/data/icons/love-wedding/512/wedding_1-512.png" width="64px" alt="...">
                                                                  </a>
                                                              </div>
                                                              <div class="media-body">
@@ -457,6 +491,23 @@
                             </div>
                         </div>
 
+                        <div class="site-content-slide1">
+                            <div class="section-content">
+                                <!-- SLIDE 1 CONTENT -->
+                                asasasa
+                            </div>
+                            <div class="page-transition-blackout"></div>
+
+                        </div>
+
+                        <div class="site-content-slide2">
+                            <div class="section-content">
+                                <!-- SLIDE 2 CONTENT -->
+                            </div>
+                            <div class="page-transition-blackout"></div>
+                        </div>
+
+
                         <div class="page-transition-blackout"></div>
                     </div>
                     <div class="common-top-header">
@@ -488,7 +539,91 @@
                         </div>
                         <div class="right-separate-line"></div>
                     </div>
-                    
+
+                    <!-- r -->
+                    <!-- mainmenu -->
+                    <div class="mainmenu-wrapper">
+
+                        <div class="mainmenu-opener1"></div>
+                        <div class="mainmenu-opener2"></div>
+
+                        <div class="mainmenu-body">
+                            <div class="mainmenu-bg mainmenu-bg1"></div>
+
+                            <div class="mainmenu-mobile-white-head-bg"></div>
+
+                            <div class="mainmenu-lang-menu">
+                                <div class="lang-menu-interceptor"></div>
+                                <ul class="lang-menu">
+                                    <div class="menu-arrow"><div></div></div>
+                                    <li class="act"><a data-lang="en">en</a></li> <li class="lang-item1"><a data-lang="ru" href="/ru/" title="По-русски">ru</a></li><li class="lang-item2"><a data-lang="cz" href="/cz/" title="Čeština">cz</a></li><li class="lang-item3"><a data-lang="de" href="/de/" title="Deutsch">de</a></li><li class="lang-item4"><a data-lang="ar" href="/ar/" title="العَرَبِيَّة‎‎">ar</a></li><li class="lang-item5"><a data-lang="cn" href="/cn/" title="中國">cn</a></li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="popup-mainmenu-wrapper-top">
+
+                                <div class="mp-logo"><a data-popup="popup" data-section-name="Rêvelton Suites" title="Rêvelton Suites" href="/"></a></div>
+
+                                <ul class="mp-mainmenu">
+                                    <li style="cursor: pointer" onclick="loadSegment('.landing-segment')">
+                                        <span class="hver">Home</span><div class="mm-item-underline"><div></div></div>
+                                    </li>
+
+                                    <li style="cursor: pointer" onclick="loadSegment('.why-choose-us')">
+                                        <span class="hver">Why choose us?</span><div class="mm-item-underline"><div></div></div>
+                                    </li>
+                                    <li  style="cursor: pointer" onclick="loadSegment('.slide1-bg2-apartment')">
+                                        <span class="hver">Rooms</span><div class="mm-item-underline"><div></div></div>
+                                    </li>
+                                    <li  style="cursor: pointer" onclick="loadSegment('.slide1-bg2-places')">
+                                        <span class="hver">Places and Events</span><div class="mm-item-underline"><div></div></div>
+                                    </li>
+                                    <li  style="cursor: pointer" onclick="loadSegment('.slide1-bg2-packages')">
+                                        <span class="hver">Offers</span><div class="mm-item-underline"><div></div></div>
+                                    </li>
+                                    <li  style="cursor: pointer" onclick="loadSegment('.slide1-bg2-contactus')">
+                                        <span class="hver">Contact us</span><div class="mm-item-underline"><div></div></div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="mp-left-block-layer">
+
+                                <div class="mp-bookbtn btn btn-green bookBtn" title="Book Now" >
+                                    <div class="mainmenu-btn-wrapper1">
+                                        <div class="original-bg-mainmenu-btn"></div>
+                                    </div>
+                                    <div class="btn-bg"></div>
+                                    <div class="btn-text">Book Now</div>
+
+                                </div>
+
+                                <div class="mp-left-phone">
+                                    Book by phone:<br/> <a href="tel:+94112674667">+9411 2 674 667</a> | <a href="tel:+94778033351">+9477 803 3351</a>
+                                </div>
+
+                                <div class="social-networks mainpage-socnet">
+                                    <ul>
+                                        <li><div class="btn-bg"></div><a class="fb btn"  title="Facebook" target="_blank"></a></li>
+                                        <li><div class="btn-bg"></div><a class="youtube btn"  title="Youtube" target="_blank"></a></li>
+
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="page-transition-blackout"></div>
+
+
+                        </div>
+                    </div>
+                    <!-- main menu -->
+                    <!-- r r-->
+
                     <!-- booking menu -->
                     <div class="bookingmenu-wrapper">
 
@@ -510,10 +645,8 @@
                                     
                                     <div class="social-networks mainpage-socnet">
                                         <ul>
-                                            <li><div class="btn-bg"></div><a href="#" class="fb btn"  title="Facebook" target="_blank"></a></li>
-                                            <li><div class="btn-bg"></div><a href="#" class="instagram btn" title="Instagram" target="_blank"></a></li>
-                                            <li><div class="btn-bg"></div><a href="#" class="twitter btn" title="Vkontakte" target="_blank"></a></li>
-                                            <li><div class="btn-bg"></div><a href="#" class="youtube btn" title="Youtube" target="_blank"></a></li>
+                                            <li><div class="btn-bg"></div><a class="fb btn"  title="Facebook" target="_blank"></a></li>
+                                            <li><div class="btn-bg"></div><a class="youtube btn"  title="Youtube" target="_blank"></a></li>
                                         </ul>
                                     </div>
                                 </div>
