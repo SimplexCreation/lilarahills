@@ -13031,3 +13031,13 @@ body.ar div.offer-block div.OB-info-block-cont {
     background: #3CB371;
     padding : 10px 15px;
 }
+
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
