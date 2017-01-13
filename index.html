@@ -1,31 +1,30 @@
-
 <!DOCTYPE html>
 <html>
-    
+
 
 <head>
 
 
-        <title>Lilara Hills</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="document-state" content="dynamic" />
-        <meta name="revisit-after" content="5 days" />
-        <meta name="Robots" content="all" />
+    <title>Lilara Hills</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="document-state" content="dynamic"/>
+    <meta name="revisit-after" content="5 days"/>
+    <meta name="Robots" content="all"/>
 
-        <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-        <link rel="stylesheet" type="text/css" media="all" href="css/swiper.css" />
-        <link rel="stylesheet" href="css/baron.css" />
-        <link rel="stylesheet" href="css/baron-skins-styles.css" />
-        <link rel="stylesheet" href="css/jquery-ui.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="css/swiper.css"/>
+    <link rel="stylesheet" href="css/baron.css"/>
+    <link rel="stylesheet" href="css/baron-skins-styles.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 
     <style>
         /* Prevents slides from flashing */
         #slides {
-            display:none;
+            display: none;
         }
 
         #scrolling { /* Carousel Frame */
@@ -50,7 +49,8 @@
 
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <style media="" data-href="https://fonts.googleapis.com/css?family=Playfair+Display:400italic&subset=latin,latin-ext,cyrillic">/* cyrillic */
+    <style media=""
+           data-href="https://fonts.googleapis.com/css?family=Playfair+Display:400italic&subset=latin,latin-ext,cyrillic">/* cyrillic */
     @font-face {
         font-family: 'Playfair Display';
         font-style: italic;
@@ -58,6 +58,7 @@
         src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/9MkijrV-dEJ0-_NWV7E6N7pW-cN4iQdgUKBHiobroRo.woff2) format('woff2');
         unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
     }
+
     /* latin-ext */
     @font-face {
         font-family: 'Playfair Display';
@@ -66,6 +67,7 @@
         src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/9MkijrV-dEJ0-_NWV7E6N3L1iaS4euO_B3wJG_mMktU.woff2) format('woff2');
         unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
     }
+
     /* latin */
     @font-face {
         font-family: 'Playfair Display';
@@ -76,620 +78,595 @@
     }
     </style>
 
-        <!--[if lte IE 10]><meta http-equiv="refresh" content="0; url=/old-browser/"><![endif]-->
+    <!--[if lte IE 10]>
+    <meta http-equiv="refresh" content="0; url=/old-browser/"><![endif]-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
 
-        <script src="js/prefixfree.min.js"></script>
-        <script>
-            var globalImgsLoadingProcess = 0;
-            var globalSiteDefaultLang = 'en'; // language in url without lang pref
-            var langArr = [ 'en', 'ru', 'cz', 'de', 'ar', 'cn' ];
-            var mainPageTitle = "";
-            var delayedCookieLang = "";
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+        var globalImgsLoadingProcess = 0;
+        var globalSiteDefaultLang = 'en'; // language in url without lang pref
+        var langArr = ['en', 'ru', 'cz', 'de', 'ar', 'cn'];
+        var mainPageTitle = "";
+        var delayedCookieLang = "";
 
-        </script>
+    </script>
 
-        <script type="text/javascript">
+    <script type="text/javascript">
 
-            previousSegment = ".landing-segment";
-            console.log("previousSegment : " + previousSegment)
-            function loadSegment(segmentName)
-            {
+        previousSegment = ".landing-segment";
+        console.log("previousSegment : " + previousSegment)
+        function loadSegment(segmentName) {
 
 
 //
-                if(!$("#responsivediv").hasClass( "position-mainpage" ))
-                {
-                    console.log("...")
-                    "close" == "close" && (window.Aa("#blockContent").css({display: "block"}), window.Aa("div.mainmenu-wrapper").oneTime("300ms", function () {
-                        window.Aa("div.logo-mainmenu-btn").removeClass("position-openedmenu")
-                    }), window.Aa("body").removeClass("mainmenu-open"), window.Aa("div.mainmenu-wrapper").oneTime("1s", function () {
-                        window.Aa("div.mainmenu-wrapper").css({display: "none"}), window.Aa("#blockContent").css({display: "none"})
-                    })), "closeStatic" == window.Bb && (window.Aa("div.mainmenu-wrapper").oneTime("100ms", function () {
-                        window.Aa("div.logo-mainmenu-btn").removeClass("position-openedmenu")
-                    }), window.Aa("body").removeClass("mainmenu-open"), window.Aa("div.mainmenu-wrapper").css({opacity: "0"}), window.Aa("div.mainmenu-wrapper").oneTime("30ms", function () {
-                        window.Aa("div.mainmenu-wrapper").css({display: "none"}), window.Aa("div.mainmenu-wrapper").css({opacity: "1"})
-                    }))
-                }
+            if (!$("#responsivediv").hasClass("position-mainpage")) {
+                console.log("...")
+                "close" == "close" && (window.Aa("#blockContent").css({display: "block"}), window.Aa("div.mainmenu-wrapper").oneTime("300ms", function () {
+                    window.Aa("div.logo-mainmenu-btn").removeClass("position-openedmenu")
+                }), window.Aa("body").removeClass("mainmenu-open"), window.Aa("div.mainmenu-wrapper").oneTime("1s", function () {
+                    window.Aa("div.mainmenu-wrapper").css({display: "none"}), window.Aa("#blockContent").css({display: "none"})
+                })), "closeStatic" == window.Bb && (window.Aa("div.mainmenu-wrapper").oneTime("100ms", function () {
+                    window.Aa("div.logo-mainmenu-btn").removeClass("position-openedmenu")
+                }), window.Aa("body").removeClass("mainmenu-open"), window.Aa("div.mainmenu-wrapper").css({opacity: "0"}), window.Aa("div.mainmenu-wrapper").oneTime("30ms", function () {
+                    window.Aa("div.mainmenu-wrapper").css({display: "none"}), window.Aa("div.mainmenu-wrapper").css({opacity: "1"})
+                }))
+            }
 
 
 //
 
-                 if(previousSegment!="--")
-                    {
-                        console.log("setting " + previousSegment + " visibility to false")
-                        $(previousSegment).css({"display": "none"});
+            if (previousSegment != "--") {
+                console.log("setting " + previousSegment + " visibility to false")
+                $(previousSegment).css({"display": "none"});
 
-                        console.log(previousSegment)
-                    }
-                    console.log("setting " + segmentName + " visibility to true")
-                    $(segmentName).css({"display": "initial"});
-                    previousSegment = segmentName;
+                console.log(previousSegment)
+            }
+            console.log("setting " + segmentName + " visibility to true")
+            $(segmentName).css({"display": "initial"});
+            previousSegment = segmentName;
 
 
-                setTimeout( function() {
-                    if(segmentName==".slide1-bg2-places")
-                    {
-                        $('.bxslider').bxSlider({
-                            pagerCustom: '#bx-pager',
-                            default: 500,
-                            auto: true,
-                            captions: true
-                        });
-                        console.log("to")
-                    }
-                }, 200);
-
-                if(".slide1-bg2-packages"==segmentName)
-                {
-
+            setTimeout(function () {
+                if (segmentName == ".slide1-bg2-places") {
+                    $('.bxslider').bxSlider({
+                        pagerCustom: '#bx-pager',
+                        default: 500,
+                        auto: true,
+                        captions: true
+                    });
+                    console.log("to")
                 }
+            }, 200);
 
-
+            if (".slide1-bg2-packages" == segmentName) {
 
             }
-        </script>
 
 
-        <script src="js/jquery.timers.js"></script>
-        <script src="js/swiper.jquery.js"></script>
-        <!--<script src="http://maps.google.com/maps/api/js?language=en&amp;key=AIzaSyD6fw2OkNa4CHNBsfBspFyMXlE7y8zWx80"></script>-->
-        <script src="js/baron.min.js"></script>
-        <script src="js/jquery-ui.min.js"></script>
-        <script src="js/datepicker-en.js"></script>
-        <script src="js/common.js"></script>
-        <!--<script src="js/google-map.js"></script>-->
+        }
+    </script>
 
 
+    <script src="js/jquery.timers.js"></script>
+    <script src="js/swiper.jquery.js"></script>
+    <!--<script src="http://maps.google.com/maps/api/js?language=en&amp;key=AIzaSyD6fw2OkNa4CHNBsfBspFyMXlE7y8zWx80"></script>-->
+    <script src="js/baron.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/datepicker-en.js"></script>
+    <script src="js/common.js"></script>
+    <!--<script src="js/google-map.js"></script>-->
 
-    </head>
-    <body class="en" data-lang="en">
-        <div class="site-body">
-            <div class="container-to-download"> 
-                       
-                          <img src="img/lilara.png" />
-                          <img src="img/preloader-bg1.svg" />
-                          <img src="img/preloader-bg2.svg" />
-                          <img src="img/preloader-bg3.svg" />
-                          <img src="img/logo-icon-lilara.png" />
-                          <img src="img/slide-boeing.jpg" />
-                          <img src="img/infrastructure-1.svg" />
-                          <img src="img/infrastructure-3.svg" />
-                          <img src="img/infrastructure-2.svg" />
-                          <img src="img/infrastructure-4.svg" />
-                          <img src="img/infrastructure-5.svg" />
-                          <img src="img/infrastructure-6.svg" />
-                          <img src="img/mouse-body.svg" />
-                          <img src="img/icon-reservation.svg" />
-                          <img src="img/ico-instagram.svg" />
-                          <img src="img/ico-youtube.svg" />
-                          <img src="img/ico-vk.svg" />
-                          <img src="img/ico-facebook.svg" />
-                          <img src="img/ico-lang-menu.svg" />
-                          <img src="img/why-video-poster.jpg" />
-                          <img src="img/mp-leftblock-bg1.svg" />
-                          <img src="img/mp-leftblock-bg2.svg" />
-                          <img src="img/mp-leftblock-bg3.svg" />
-                          <img src="img/mp-leftblock-bg4.svg" />
-                          <div style='font-family: harmonia_black'>some text</div>
-                          <div style='font-family: harmonia_bold'>some text</div>
-                          <div style='font-family: harmonia_light;'>some text</div>
-                          <div style='font-family: harmonia_regular'>some text</div>
-                          <div style="font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400">some text</div>
+
+</head>
+<body class="en" data-lang="en">
+<div class="site-body">
+    <div class="container-to-download">
+
+        <img src="img/lilara.png"/>
+        <img src="img/preloader-bg1.svg"/>
+        <img src="img/preloader-bg2.svg"/>
+        <img src="img/preloader-bg3.svg"/>
+        <img src="img/logo-icon-lilara.png"/>
+        <img src="img/slide-boeing.jpg"/>
+        <img src="img/infrastructure-1.svg"/>
+        <img src="img/infrastructure-3.svg"/>
+        <img src="img/infrastructure-2.svg"/>
+        <img src="img/infrastructure-4.svg"/>
+        <img src="img/infrastructure-5.svg"/>
+        <img src="img/infrastructure-6.svg"/>
+        <img src="img/mouse-body.svg"/>
+        <img src="img/icon-reservation.svg"/>
+        <img src="img/ico-instagram.svg"/>
+        <img src="img/ico-youtube.svg"/>
+        <img src="img/ico-vk.svg"/>
+        <img src="img/ico-facebook.svg"/>
+        <img src="img/ico-lang-menu.svg"/>
+        <img src="img/why-video-poster.jpg"/>
+        <img src="img/mp-leftblock-bg1.svg"/>
+        <img src="img/mp-leftblock-bg2.svg"/>
+        <img src="img/mp-leftblock-bg3.svg"/>
+        <img src="img/mp-leftblock-bg4.svg"/>
+        <div style='font-family: harmonia_black'>some text</div>
+        <div style='font-family: harmonia_bold'>some text</div>
+        <div style='font-family: harmonia_light;'>some text</div>
+        <div style='font-family: harmonia_regular'>some text</div>
+        <div style="font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400">some text</div>
+    </div>
+
+    <div class="mp-loader" id="mp_loader">
+        <div class="perc-of-loading" id="percLoading">0%</div>
+        <div class="mp-loader-body1">
+            <div class="mp-loader-body2">
+                <div class="white-frame"></div>
+                <div class="green-frame1">
+                    <div class="green-frame2"></div>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <div class="mp-loader" id="mp_loader">
-                    <div class="perc-of-loading" id="percLoading">0%</div>
-                    <div class="mp-loader-body1">
-                        <div class="mp-loader-body2">
-                            <div class="white-frame"></div>
-                            <div class="green-frame1" >
-                                <div class="green-frame2"></div>
-                            </div>
-                        </div>
-                    </div>
+    <div id="blockContent"></div>
+
+
+    <div class="site-container0">
+        <div class="site-container">
+
+            <!--responsive-->
+            <div id="responsivediv" class="logo-mainmenu-btn Pposition-mainpage Pposition-openedmenu">
+                <div class="revlton-icon">
+                </div>
+                <div class="mainmenu-btn">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                    <div class="mainmenu-btn-bg"></div>
+                </div>
             </div>
+            <!--  -->
 
-            <div id="blockContent"></div>
+            <div class="mainpage-body">
+                <div class="mp-left-block-top">
+                    <div class="mp-logo"></div>
+                    <ul class="mp-mainmenu">
+                        <li style="cursor: pointer" onclick="loadSegment('.landing-segment')">
+                            <span class="hver">Home</span>
+                            <div class="mm-item-underline">
+                                <div></div>
+                            </div>
+                        </li>
 
+                        <!--<li style="cursor: pointer" onclick="loadSegment('.why-choose-us')">-->
+                        <!--<span class="hver">Why choose us?</span><div class="mm-item-underline"><div></div></div>-->
+                        <!--</li>-->
+                        <li style="cursor: pointer" onclick="loadSegment('.slide1-bg2-apartment')">
+                            <span class="hver">Rooms</span>
+                            <div class="mm-item-underline">
+                                <div></div>
+                            </div>
+                        </li>
+                        <li style="cursor: pointer" onclick="loadSegment('.slide1-bg2-places')">
+                            <span class="hver">Places and Events</span>
+                            <div class="mm-item-underline">
+                                <div></div>
+                            </div>
+                        </li>
+                        <li style="cursor: pointer" onclick="loadSegment('.slide1-bg2-packages')">
+                            <span class="hver">Offers</span>
+                            <div class="mm-item-underline">
+                                <div></div>
+                            </div>
+                        </li>
+                        <li style="cursor: pointer" onclick="loadSegment('.slide1-bg2-contactus')">
+                            <span class="hver">Contact us</span>
+                            <div class="mm-item-underline">
+                                <div></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="site-container0">
-                <div class="site-container">
+                <div class="mp-slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div style="position:relative; display:inline-block; overflow:scroll;" class="swiper-slide"
+                                 id="slide1">
+                                <!-- landing segment -->
+                                <img class="landing-segment" src="img/hotel.jpg" style="height: 100%; width: 100%;">
+                                <!-- contact us -->
+                                <img style="width: 88%; margin-top: 38px;" class="slide1-bg2-contactus"
+                                     src="img/address.png" width="55%">
+                                <div class="slide1-bg2-contactus"
+                                     style="padding-top: 25%; padding-left: 8%; background: none repeat scroll 0 0 ; opacity: 0.5; top:0; left:0; position: absolute;">
+                                    <h6 style="color: black; margin-top: 19%; font-weight: bold;">
+                                        Lilara Hills, Enamalketiya, Diyatalawa.
+                                    </h6>
+                                </div>
 
-                    <!--responsive-->
-                    <div id="responsivediv" class="logo-mainmenu-btn Pposition-mainpage Pposition-openedmenu">
-                        <div class="revlton-icon">
-                        </div>
-                        <div class="mainmenu-btn">
-                            <div class="line1"></div>
-                            <div class="line2"></div>
-                            <div class="line3"></div>
-                            <div class="mainmenu-btn-bg"></div>
-                        </div>
-                    </div>
-                    <!--  -->
+                                <!-- Why choose us -->
+                                <img class="why-choose-us" src="img/ycus.jpeg" style="height: 100%; width: 100%;">
+                                <div class="why-choose-us"
+                                     style="padding-top: 25%; padding-left: 8%; background: none repeat scroll 0 0 ; opacity: 0.5; top:0; left:0; position: absolute;">
+                                    <h1 style="color: #f5f5f5;background: black;font-weight: bold;">We provide you the
+                                        taste of nature, relaxation and luxury with our royal service and care</h1>
+                                </div>
 
-                    <div class="mainpage-body">
-                        <div class="mp-left-block-top">
-                            <div class="mp-logo"></div>
-                            <ul class="mp-mainmenu">
-                                <li style="cursor: pointer" onclick="loadSegment('.landing-segment')">
-                                    <span class="hver">Home</span><div class="mm-item-underline"><div></div></div>
-                                </li>
+                                <!-- rooms -->
+                                <img class="slide1-bg2-apartment" src="img/rooms.jpeg"
+                                     style="height: 100%; width: 100%;">
+                                <div class="slide1-bg2-apartment"
+                                     style="padding-top: 25%; padding-left: 8%; background: none repeat scroll 0 0 ; opacity: 0.5; top:0; left:0; position: absolute;">
+                                    <h1 style="color: #ffffff; font-weight: bold;">enjoy your breath and deep sleep with
+                                        music of silence…….heavenly yours…..</h1>
+                                </div>
 
-                                <!--<li style="cursor: pointer" onclick="loadSegment('.why-choose-us')">-->
-                                    <!--<span class="hver">Why choose us?</span><div class="mm-item-underline"><div></div></div>-->
-                                <!--</li>-->
-                                <li  style="cursor: pointer" onclick="loadSegment('.slide1-bg2-apartment')">
-                                    <span class="hver">Rooms</span><div class="mm-item-underline"><div></div></div>
-                                </li>
-                                <li  style="cursor: pointer" onclick="loadSegment('.slide1-bg2-places')">
-                                    <span class="hver">Places and Events</span><div class="mm-item-underline"><div></div></div>
-                                </li>
-                                <li  style="cursor: pointer" onclick="loadSegment('.slide1-bg2-packages')">
-                                    <span class="hver">Offers</span><div class="mm-item-underline"><div></div></div>
-                                </li>
-                                <li  style="cursor: pointer" onclick="loadSegment('.slide1-bg2-contactus')">
-                                    <span class="hver">Contact us</span><div class="mm-item-underline"><div></div></div>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div class="mp-slider">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div style="position:relative; display:inline-block; overflow:scroll;" class="swiper-slide" id="slide1" >
-                                        <!-- landing segment -->
-                                        <img class="landing-segment" src="img/hotel.jpg" style="height: 100%; width: 100%;">
-                                        <!-- contact us -->
-                                        <img style="width: 88%; margin-top: 38px;" class="slide1-bg2-contactus" src="img/address.png" width="55%">
-                                        <div class="slide1-bg2-contactus" style="padding-top: 25%; padding-left: 8%; background: none repeat scroll 0 0 ; opacity: 0.5; top:0; left:0; position: absolute;">
-                                            <h6 style="color: black; margin-top: 19%; font-weight: bold;">
-                                                Lilara Hills, Enamalketiya, Diyatalawa.
-                                            </h6>
-                                        </div>
+                                <!-- places and events -->
+                                <div class="slide1-bg2-places">
+                                    <div style="margin-top: 8px;color:#48bba0;">
+                                        <br>
+                                        <ul class="bxslider">
+                                            <li><img class="image" src="img/Adisham Monastery.jpg"
+                                                     title="Adisham Monastery"/>
+                                                <p class="text">45 Mins</p></li>
+                                            <li><img src="img/Demodara railway station.jpg"
+                                                     title="Demodara railway station"/>
+                                                <p class="text">45 Mins</p></li>
+                                            <li><img src="img/Nine Arch bridge.jpg" title="Nine Arch bridge"/>
+                                                <p class="text">45 Mins</p></li>
+                                            <li><img src="img/Bamarakanda Falls.jpg" title="Bamarakanda Falls"/>
+                                                <p class="text">45 Mins</p></li>
+                                            <li><img src="img/Horton Plains.jpg" title="Horton Plains"/>
+                                                <p class="text">60 Mins</p></li>
+                                            <li><img src="img/World's End.jpg" title="World's End"/>
+                                                <p class="text">45 Mins</p></li>
+                                            <li><img src="img/Haggala Gardens.jpg" title="Haggala Gardens"/>
+                                                <p class="text">45 Mins</p></li>
+                                            <li><img src="img/Sight seeing in Haputale - Beragala area.jpg"
+                                                     title="Sight seeing in Haputale - Beragala"/>
+                                                <p class="text">20 Mins</p></li>
+                                            <li><img src="img/Nuwara Eliya.jpg" title="Nuwara Eliya"/>
+                                                <p class="text">60 Mins</p></li>
+                                            <li><img src="img/lipton seat.jpg" title="lipton seat"/>
+                                                <p class="text">45 Mins</p></li>
+                                            <li><img src="img/Dambetenna Tea Factory.jpg"
+                                                     title="Dambetenna Tea Factory"/>
+                                                <p class="text">45 Mins</p></li>
+                                            <li><img src="img/Little Adams Peak.jpg" title="Little Adams Peak"/>
+                                                <p class="text">45 Mins</p></li>
+                                            <li><img src="img/Ella Rock.jpg" title="Ella Rock"/>
+                                                <p class="text">45 Mins</p></li>
+                                            <li><img src="img/Rawana ella.jpg" title="Rawana ella"/>
+                                                <p class="text">45 Mins</p></li>
 
-                                        <!-- Why choose us -->
-                                        <img class="why-choose-us" src="img/ycus.jpeg" style="height: 100%; width: 100%;">
-                                        <div class="why-choose-us" style="padding-top: 25%; padding-left: 8%; background: none repeat scroll 0 0 ; opacity: 0.5; top:0; left:0; position: absolute;">
-                                            <h1 style="color: #f5f5f5;background: black;font-weight: bold;">We provide you the taste of nature, relaxation and luxury with our royal service and care</h1>
-                                        </div>
-
-                                        <!-- rooms -->
-                                        <img class="slide1-bg2-apartment" src="img/rooms.jpeg" style="height: 100%; width: 100%;">
-                                        <div class="slide1-bg2-apartment" style="padding-top: 25%; padding-left: 8%; background: none repeat scroll 0 0 ; opacity: 0.5; top:0; left:0; position: absolute;">
-                                            <h1 style="color: #ffffff; font-weight: bold;">enjoy your breath and deep sleep with music of silence…….heavenly yours…..</h1>
-                                        </div>
-
-                                        <!-- places and events -->
-                                        <div class="slide1-bg2-places">
-                                            <div style="margin-top: 8px;color:#48bba0;">
-                                                <br>
-                                                <ul class="bxslider">
-                                                    <li><img src="img/Adisham Monastery.jpg" title="Adisham Monastery" /></li>
-                                                    <li><img src="img/Demodara railway station.jpg" title="Demodara railway station" /></li>
-                                                    <li><img src="img/Nine Arch bridge.jpg" title="Nine Arch bridge" /></li>
-                                                    <li><img src="img/Bamarakanda Falls.jpg" title="Bamarakanda Falls" /></li>
-                                                    <li><img src="img/Horton Plains.jpg" title="Horton Plains" /></li>
-                                                    <li><img src="img/World's End.jpg" title="World's End" /></li>
-                                                    <li><img src="img/Haggala Gardens.jpg" title="Haggala Gardens" /></li>
-                                                    <li><img src="img/Sight seeing in Haputale - Beragala area.jpg" title="Sight seeing in Haputale - Beragala" /></li>
-                                                    <li><img src="img/Nuwara Eliya.jpg" title="Nuwara Eliya" /></li>
-                                                </ul>
-                                            </div>
-                                            <!--<div id="bx-pager">-->
-                                                <!--<a data-slide-index="0" href="#"><img src="img/thumb.jpg" /></a>-->
-                                                <!--<a data-slide-index="1" href="#"><img src="img/thumb.jpg" /></a>-->
-                                                <!--<a data-slide-index="2" href="#"><img src="img/thumb.jpg" /></a>-->
-                                                <!--<a data-slide-index="3" href="#"><img src="img/thumb.jpg" /></a>-->
-                                            <!--</div>-->
-                                        </div>
-
-
-
-                                        <!-- packages -->
-                                        <div class="slide1-bg2-packages">
-                                             <div style="margin-top: 10px" class="bs-example" data-example-id="thumbnails-with-custom-content">
-                                                 <div style="margin-right: 2px; margin-top: 55px;" class="row">
-                                                     <h6>CELEBRATIONS</h6>
-                                                     <div class="col-xs-6">
-                                                         <div class="media">
-                                                             <div class="media-left">
-                                                                 <a href="#">
-                                                                     <img class="media-object" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Party_icon.svg" width="64px" alt="...">
-                                                                 </a>
-                                                             </div>
-                                                             <div class="media-body">
-                                                                 <h4 class="media-heading">GREAT PARTIES</h4>
-
-                                                             </div>
-                                                         </div>
-                                                     </div>
-                                                     <div class="col-xs-6">
-                                                         <div class="media">
-                                                             <div class="media-left">
-                                                                 <a href="#">
-                                                                     <img class="media-object" src="https://d30y9cdsu7xlg0.cloudfront.net/png/34294-200.png" width="64px"  alt="...">
-                                                                 </a>
-                                                             </div>
-                                                             <div class="media-body">
-                                                                 <h4 class="media-heading">WEDDINGS</h4>
-
-                                                             </div>
-                                                         </div>
-                                                     </div>
-                                                 </div>
-                                                 <div style="margin-right: 2px;" class="row">
-                                                     <h6>FOOD</h6>
-                                                     <div class="col-xs-6">
-                                                         <div class="media">
-                                                             <div class="media-left">
-                                                                 <a href="#">
-                                                                     <img class="media-object" src="https://cdn0.iconfinder.com/data/icons/housicon/512/terrace-512.png" width="64px" alt="...">
-                                                                 </a>
-                                                             </div>
-                                                             <div class="media-body">
-                                                                 <h4 class="media-heading">THE TERRACE</h4>
-
-                                                             </div>
-                                                         </div>
-                                                         <div class="media">
-                                                             <div class="media-left">
-                                                                 <a href="#">
-                                                                     <img class="media-object" src="https://maxcdn.icons8.com/Share/icon/Food//bar1600.png" width="64px" alt="...">
-                                                                 </a>
-                                                             </div>
-                                                             <div class="media-body">
-                                                                 <h4 class="media-heading">T BAR</h4>
-                                                             </div>
-                                                         </div>
-                                                     </div>
-                                                     <div class="col-xs-6">
-                                                         <div class="media">
-                                                             <div class="media-left">
-                                                                 <a href="#">
-                                                                     <img class="media-object" src="https://d30y9cdsu7xlg0.cloudfront.net/png/85437-200.png" width="64px" alt="...">
-                                                                 </a>
-                                                             </div>
-                                                             <div class="media-body">
-                                                                 <h4 class="media-heading">THE ROSE</h4>
-                                                             </div>
-                                                         </div>
-                                                         <div class="media">
-                                                             <div class="media-left">
-                                                                 <a href="#">
-                                                                     <img class="media-object" src="https://cdn1.iconfinder.com/data/icons/cultivate/500/glasshouse-512.png" width="64px" alt="...">
-                                                                 </a>
-                                                             </div>
-                                                             <div class="media-body">
-                                                                 <h4 class="media-heading">THE GLASSHOUSE</h4>
-
-                                                             </div>
-                                                         </div>
-                                                     </div>
-                                                 </div>
-                                                 <div style="margin-right: 2px; " class="row">
-                                                     <H6>FAMILIES</H6>
-                                                     <div class="col-xs-6">
-                                                         <div class="media">
-                                                             <div class="media-left">
-                                                                 <a href="#">
-                                                                     <img class="media-object" src="https://cdn0.iconfinder.com/data/icons/realty-1/512/family-512.png" width="64px" alt="...">
-                                                                 </a>
-                                                             </div>
-                                                             <div class="media-body">
-                                                                 <h4 class="media-heading">FAMILY ROOMS</h4>
-                                                             </div>
-                                                         </div>
-                                                         <div class="media">
-                                                             <div class="media-left">
-                                                                 <a href="#">
-                                                                     <img class="media-object" src="https://www.tworiversymca.org/assets/images/gallery/youth_icon.png" width="64px" alt="...">
-                                                                 </a>
-                                                             </div>
-                                                             <div class="media-body">
-                                                                 <h4 class="media-heading">KIDS ACTIVITIES</h4>
-                                                             </div>
-                                                         </div>
-                                                         <div class="media">
-                                                             <div class="media-left">
-                                                                 <a href="#">
-                                                                     <img class="media-object" src="https://cdn3.iconfinder.com/data/icons/map/500/nearby-512.png" width="64px" alt="...">
-                                                                 </a>
-                                                             </div>
-                                                             <div class="media-body">
-                                                                 <h4 class="media-heading">NEARBY ATTRACTIONS</h4>
-                                                             </div>
-                                                         </div>
-                                                     </div>
-                                                     <div class="col-xs-6">
-                                                         <div class="media">
-                                                             <div class="media-left">
-                                                                 <a href="#">
-                                                                     <img class="media-object" src="https://cdn2.iconfinder.com/data/icons/kids-glyph-black/2048/5505_-_Eating_Food-512.png" width="64px" alt="...">
-                                                                 </a>
-                                                             </div>
-                                                             <div class="media-body">
-                                                                 <h4 class="media-heading">FOOD FOR KIDS</h4>
-                                                             </div>
-                                                         </div>
-                                                         <div class="media">
-                                                             <div class="media-left">
-                                                                 <a href="#">
-                                                                     <img class="media-object" src="https://image.freepik.com/free-icon/offer-label-ios-7-interface-symbol_318-35360.jpg" width="64px" alt="...">
-                                                                 </a>
-                                                             </div>
-                                                             <div class="media-body">
-                                                                 <h4 class="media-heading">OFFERS</h4>
-                                                             </div>
-                                                         </div>
-                                                         <div class="media">
-                                                             <div class="media-left">
-                                                                 <a href="#">
-                                                                     <img class="media-object" src="https://cdn4.iconfinder.com/data/icons/love-wedding/512/wedding_1-512.png" width="64px" alt="...">
-                                                                 </a>
-                                                             </div>
-                                                             <div class="media-body">
-                                                                 <h4 class="media-heading">YOUR HONEYMOON</h4>
-                                                             </div>
-                                                         </div>
-
-                                                     </div>
-                                                 </div>
-                                                 <div style="margin-right: 2px; " class="row">
-                                                 <H6>GALLERY , MEETINGS & WORKSHOPS</H6>
-                                                 </div>
-                                                 <!--<div style="margin-right: 2px; margin-top: 55px;" class="row">-->
-                                                     <!--<h6></h6>-->
-                                                 <!--</div>-->
-                                            </div>
-                                        </div>
+                                        </ul>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mp-left-block" >
-
-                            <div class="objContainer" style="background-image: url(img/mp-leftblock-bg1.svg);"></div>
-
-                            <div class="mp-left-block-layer">
-                                <div class="mp-bookbtn btn btn-green bookBtn" title="Book Now">
-                                    <div class="btn-bg"></div>
-                                    <div class="btn-text">Book Now</div>
-                                </div>
-                                <div class="mp-left-phone">Book by phone:<br/><a href="tel:+94112674667">+9411 2 674 667</a> | <a href="tel:+94778033351">+9477 803 3351</a></div>
-                                <div class="social-networks mainpage-socnet">
-                                    <ul>
-                                        <li><div class="btn-bg"></div><a class="fb btn"  title="Facebook" target="_blank"></a></li>
-                                        <li><div class="btn-bg"></div><a class="youtube btn"  title="Youtube" target="_blank"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="site-content-slide1">
-                            <div class="section-content">
-                                <!-- SLIDE 1 CONTENT -->
-                                asasasa
-                            </div>
-                            <div class="page-transition-blackout"></div>
-
-                        </div>
-
-                        <div class="site-content-slide2">
-                            <div class="section-content">
-                                <!-- SLIDE 2 CONTENT -->
-                            </div>
-                            <div class="page-transition-blackout"></div>
-                        </div>
-
-
-                        <div class="page-transition-blackout"></div>
-                    </div>
-                    <div class="common-top-header">
-                        <div class="header-booking-by-phone">
-                            <div class="book-before-phone">Book by phone:</div>
-                            <div class="book-phone"><a href="tel:+94112674667">+9411 2 674 667 | +9477 803 3351</a></div>
-                        </div>
-
-                        <div class="header-logo">
-                            <a href="index.html"></a>
-                        </div>
-
-                        <div class="booking-btn-header btn btn-green bookBtn">
-                            <div class="btn-bg"></div>
-                            <div class="btn-text"><span>Book Now</span></div>
-                        </div>
-
-                        <div class="bottom-separate-line"></div>
-
-                    </div>
-
-                    <div class="common-back-btn">
-                        <div class="cbb-body-arrow0">
-                            <div class="cbb-body-arrow">
-                                <div class="ccb-arr-1"></div>
-                                <div class="ccb-arr-2"></div>
-                                <div class="ccb-arr-3"></div>
-                            </div>
-                        </div>
-                        <div class="right-separate-line"></div>
-                    </div>
-
-                    <!-- r -->
-                    <!-- mainmenu -->
-                    <div class="mainmenu-wrapper">
-
-                        <div class="mainmenu-opener1"></div>
-                        <div class="mainmenu-opener2"></div>
-
-                        <div class="mainmenu-body">
-                            <div class="mainmenu-bg mainmenu-bg1"></div>
-
-                            <div class="mainmenu-mobile-white-head-bg"></div>
-
-                            <div class="mainmenu-lang-menu">
-                                <div class="lang-menu-interceptor"></div>
-                                <ul class="lang-menu">
-                                    <div class="menu-arrow"><div></div></div>
-                                    <li class="act"><a data-lang="en">en</a></li> <li class="lang-item1"><a data-lang="ru" href="/ru/" title="По-русски">ru</a></li><li class="lang-item2"><a data-lang="cz" href="/cz/" title="Čeština">cz</a></li><li class="lang-item3"><a data-lang="de" href="/de/" title="Deutsch">de</a></li><li class="lang-item4"><a data-lang="ar" href="/ar/" title="العَرَبِيَّة‎‎">ar</a></li><li class="lang-item5"><a data-lang="cn" href="/cn/" title="中國">cn</a></li>
-
-                                </ul>
-
-                            </div>
-
-                            <div class="popup-mainmenu-wrapper-top">
-
-                                <div class="mp-logo"><a data-popup="popup" data-section-name="Rêvelton Suites" title="Rêvelton Suites" href="/"></a></div>
-
-                                <ul class="mp-mainmenu">
-                                    <li style="cursor: pointer" onclick="loadSegment('.landing-segment')">
-                                        <span class="hver">Home</span><div class="mm-item-underline"><div></div></div>
-                                    </li>
-
-                                    <li style="cursor: pointer" onclick="loadSegment('.why-choose-us')">
-                                        <span class="hver">Why choose us?</span><div class="mm-item-underline"><div></div></div>
-                                    </li>
-                                    <li  style="cursor: pointer" onclick="loadSegment('.slide1-bg2-apartment')">
-                                        <span class="hver">Rooms</span><div class="mm-item-underline"><div></div></div>
-                                    </li>
-                                    <li  style="cursor: pointer" onclick="loadSegment('.slide1-bg2-places')">
-                                        <span class="hver">Places and Events</span><div class="mm-item-underline"><div></div></div>
-                                    </li>
-                                    <li  style="cursor: pointer" onclick="loadSegment('.slide1-bg2-packages')">
-                                        <span class="hver">Offers</span><div class="mm-item-underline"><div></div></div>
-                                    </li>
-                                    <li  style="cursor: pointer" onclick="loadSegment('.slide1-bg2-contactus')">
-                                        <span class="hver">Contact us</span><div class="mm-item-underline"><div></div></div>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <div class="mp-left-block-layer">
-
-                                <div class="mp-bookbtn btn btn-green bookBtn" title="Book Now" >
-                                    <div class="mainmenu-btn-wrapper1">
-                                        <div class="original-bg-mainmenu-btn"></div>
-                                    </div>
-                                    <div class="btn-bg"></div>
-                                    <div class="btn-text">Book Now</div>
-
-                                </div>
-
-                                <div class="mp-left-phone">
-                                    Book by phone:<br/> <a href="tel:+94112674667">+9411 2 674 667</a> | <a href="tel:+94778033351">+9477 803 3351</a>
-                                </div>
-
-                                <div class="social-networks mainpage-socnet">
-                                    <ul>
-                                        <li><div class="btn-bg"></div><a class="fb btn"  title="Facebook" target="_blank"></a></li>
-                                        <li><div class="btn-bg"></div><a class="youtube btn"  title="Youtube" target="_blank"></a></li>
-
-                                    </ul>
+                                    <!--<div id="bx-pager">-->
+                                    <!--<a data-slide-index="0" href="#"><img src="img/thumb.jpg" /></a>-->
+                                    <!--<a data-slide-index="1" href="#"><img src="img/thumb.jpg" /></a>-->
+                                    <!--<a data-slide-index="2" href="#"><img src="img/thumb.jpg" /></a>-->
+                                    <!--<a data-slide-index="3" href="#"><img src="img/thumb.jpg" /></a>-->
+                                    <!--</div>-->
                                 </div>
 
 
-                            </div>
+                                <!-- packages -->
+                                <div class="slide1-bg2-packages">
+                                    <div style="float: left; margin-right: 80px">
+                                        <h3>CELEBRATIONS</h3>
+                                        <ul style="margin-bottom: 80px">
+                                            <li><img width="42" height="42" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Party_icon.svg"><p>GREAT PARTIES</p></li>
+                                            <li><img width="42" height="42" src="https://d30y9cdsu7xlg0.cloudfront.net/png/34294-200.png"><p>WEDDINGS</p></li>
+                                        </ul>
 
-
-                            <div class="page-transition-blackout"></div>
-
-
-                        </div>
-                    </div>
-                    <!-- main menu -->
-                    <!-- r r-->
-
-                    <!-- booking menu -->
-                    <div class="bookingmenu-wrapper">
-
-                        <div class="bookingmenu-opener1"></div>
-                        <div class="bookingmenu-opener2"></div>
-
-                        <div class="booking-body">
-                            <div class="mainmenu-bg mainmenu-bg1"></div>
-                            
-                            <div class="mainmenu-mobile-white-head-bg"></div>
-
-                            <div class="popup-mainmenu-wrapper-top">
-                                <div class="mp-logo"><a href="#" data-popup="popup" data-section-name="Rêvelton Suites" title="Rêvelton Suites" ></a></div>
-                            </div>
-                                <div class="mp-left-block-layer">
-                                    <div class="mp-left-phone">
-                                        Book by phone:<br/> <a href="tel:+94112674667">+9411 2 674 667</a> | <a href="tel:+94778033351">+9477 803 3351</a>
-                                    </div>
-                                    
-                                    <div class="social-networks mainpage-socnet">
+                                        <h3>FOOD</h3>
                                         <ul>
-                                            <li><div class="btn-bg"></div><a class="fb btn"  title="Facebook" target="_blank"></a></li>
-                                            <li><div class="btn-bg"></div><a class="youtube btn"  title="Youtube" target="_blank"></a></li>
+                                            <li><img width="42" height="42" src="https://cdn0.iconfinder.com/data/icons/housicon/512/terrace-512.png"><p>THE TERRACE</p></li>
+                                            <li><img width="42" height="42" src="https://maxcdn.icons8.com/Share/icon/Food//bar1600.png"><p>T BAR</p></li>
+                                            <li><img width="42" height="42" src="https://d30y9cdsu7xlg0.cloudfront.net/png/85437-200.png"><p>THE ROSE</p></li>
+                                            <li><img width="42" height="42" src="https://cdn1.iconfinder.com/data/icons/cultivate/500/glasshouse-512.png"><p>THE GLASSHOUSE</p></li>
+                                        </ul>
+                                    </div>
+                                    <div style="float: left;margin-right: 50px">
+                                        <h3>FAMILIES</h3>
+                                        <ul>
+                                            <li><img width="42" height="42" src="https://www.tworiversymca.org/assets/images/gallery/youth_icon.png"><p>KIDS ACTIVITIES</p></li>
+                                            <li><img width="42" height="42" src="https://cdn3.iconfinder.com/data/icons/map/500/nearby-512.png"><p>NEARBY ATTRACTIONS</p></li>
+                                            <li><img width="42" height="42" src="https://cdn2.iconfinder.com/data/icons/kids-glyph-black/2048/5505_-_Eating_Food-512.png"><p>FOOD FOR KIDS</p></li>
+                                            <li><img width="42" height="42" src="https://image.freepik.com/free-icon/offer-label-ios-7-interface-symbol_318-35360.jpg"><p>OFFERS</p></li>
+                                            <li><img width="42" height="42" src="https://cdn4.iconfinder.com/data/icons/love-wedding/512/wedding_1-512.png"><p>YOUR HONEYMOON</p></li>
+                                        </ul>
+                                    </div>
+                                    <div style="float: left">
+                                        <h3>ACTIVITIES AND SPORTS</h3>
+                                        <ul>
+                                            <li><img width="42" height="42" src="http://downloadclipart.org/do-upload/clipart/2016-07/Golf_icon.jpg"><p>GOLF</p></li>
+                                            <li><img width="42" height="42" src="http://www.iconshock.com/img_vista/IPHONE/sports/jpg/polo_icon.jpg"><p>POLO</p></li>
+                                            <li><img width="42" height="42" src="https://d30y9cdsu7xlg0.cloudfront.net/png/226-200.png"><p>COLD WATER SWIMMING</p></li>
+                                            <li><img width="42" height="42" src="https://services.garmin.com/appsLibraryBusinessServices_v0/rest/apps/39d3b5e8-67db-4517-93a8-5ec485269635/icon/950cc5e2-e399-4eb7-8afc-2eab72a02982"><p>WALK & HIKE</p></li>
+                                            <li><img width="42" height="42" src="https://cdn2.iconfinder.com/data/icons/sport-items-2/512/racing_flag-512.png"><p>FOX HILL MOTOR CROSS</p></li>
+                                        </ul>
+                                    </div>
+                                    <div style="float: left;margin-top: 50px;margin-left:50px">
+                                        <h3>OTHERS</h3>
+                                        <ul>
+                                            <li><img width="42" height="42" src="http://www.hotelorion.ge/Tbilisi/public/img/icons/icon-gallery.gif"><p>GALLERY</p></li>
+                                            <li><img width="42" height="42" src="http://simpleicon.com/wp-content/uploads/meeting.png"><p>MEETINGS</p></li>
+                                            <li><img width="42" height="42" src="http://alvislazarus.com/programs/images/SupplyChain-Workshop.jpg"><p>WORKSHOPS</p></li>
                                         </ul>
                                     </div>
                                 </div>
-
-                                <div class='booking-gadget'>
-                                  <div class='BG-background'></div>
-                                  <div class='BG-header'>Book Online</div>
-                                  <div class='booking-form'>
-                                    <form>
-                                      <input type='hidden' name='apartmentId' id='apartmentId' value=''> <!-- apartment ID -->
-                                      <div class='BG-field BG-field1'><input type='text' name='arrival' id='arrivalDate' placeholder='Arrival' title='Arrival' readonly /></div>
-                                      <div class='BG-field BG-field2'><input type='text' name='departure' id='departureDate' placeholder='Departure' title='Departure' readonly /></div>
-                                      <div class='BG-field BG-field3'>
-                                        <div class='footer-btn btn btn-green' id='subminBooking' >
-                                            <div class='btn-bg'></div>
-                                            <div class='btn-text'>Check availability</div>
-                                        </div>
-                                      </div>
-                                    </form>
-                                  </div>
-                                </div>
-
-                                <div class="page-transition-blackout"></div>
-                            
-
+                            </div>
                         </div>
                     </div>
-                    <!-- booking menu -->
                 </div>
 
-                <div class="baron__track">
-                        <div class="baron__control baron__up"></div>
-                        <div class="baron__free">
-                            <div class="baron__bar"></div>
+                <div class="mp-left-block">
+
+                    <div class="objContainer" style="background-image: url(img/mp-leftblock-bg1.svg);"></div>
+
+                    <div class="mp-left-block-layer">
+                        <div class="mp-bookbtn btn btn-green bookBtn" title="Book Now">
+                            <div class="btn-bg"></div>
+                            <div class="btn-text">Book Now</div>
                         </div>
-                        <div class="baron__control baron__down"></div>
+                        <div class="mp-left-phone">Book by phone:<br/><a href="tel:+94112674667">+9411 2 674 667</a> |
+                            <a href="tel:+94778033351">+9477 803 3351</a></div>
+                        <div class="social-networks mainpage-socnet">
+                            <ul>
+                                <li>
+                                    <div class="btn-bg"></div>
+                                    <a class="fb btn" title="Facebook" target="_blank"></a></li>
+                                <li>
+                                    <div class="btn-bg"></div>
+                                    <a class="youtube btn" title="Youtube" target="_blank"></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="site-content-slide1">
+                    <div class="section-content">
+                        <!-- SLIDE 1 CONTENT -->
+                        asasasa
+                    </div>
+                    <div class="page-transition-blackout"></div>
+
+                </div>
+
+                <div class="site-content-slide2">
+                    <div class="section-content">
+                        <!-- SLIDE 2 CONTENT -->
+                    </div>
+                    <div class="page-transition-blackout"></div>
+                </div>
+
+
+                <div class="page-transition-blackout"></div>
+            </div>
+            <div class="common-top-header">
+                <div class="header-booking-by-phone">
+                    <div class="book-before-phone">Book by phone:</div>
+                    <div class="book-phone"><a href="tel:+94112674667">+9411 2 674 667 | +9477 803 3351</a></div>
+                </div>
+
+                <div class="header-logo">
+                    <a href="index.html"></a>
+                </div>
+
+                <div class="booking-btn-header btn btn-green bookBtn">
+                    <div class="btn-bg"></div>
+                    <div class="btn-text"><span>Book Now</span></div>
+                </div>
+
+                <div class="bottom-separate-line"></div>
 
             </div>
 
+            <div class="common-back-btn">
+                <div class="cbb-body-arrow0">
+                    <div class="cbb-body-arrow">
+                        <div class="ccb-arr-1"></div>
+                        <div class="ccb-arr-2"></div>
+                        <div class="ccb-arr-3"></div>
+                    </div>
+                </div>
+                <div class="right-separate-line"></div>
+            </div>
+
+            <!-- r -->
+            <!-- mainmenu -->
+            <div class="mainmenu-wrapper">
+
+                <div class="mainmenu-opener1"></div>
+                <div class="mainmenu-opener2"></div>
+
+                <div class="mainmenu-body">
+                    <div class="mainmenu-bg mainmenu-bg1"></div>
+
+                    <div class="mainmenu-mobile-white-head-bg"></div>
+
+                    <div class="mainmenu-lang-menu">
+                        <div class="lang-menu-interceptor"></div>
+                        <ul class="lang-menu">
+                            <div class="menu-arrow">
+                                <div></div>
+                            </div>
+                            <li class="act"><a data-lang="en">en</a></li>
+                            <li class="lang-item1"><a data-lang="ru" href="/ru/" title="По-русски">ru</a></li>
+                            <li class="lang-item2"><a data-lang="cz" href="/cz/" title="Čeština">cz</a></li>
+                            <li class="lang-item3"><a data-lang="de" href="/de/" title="Deutsch">de</a></li>
+                            <li class="lang-item4"><a data-lang="ar" href="/ar/" title="العَرَبِيَّة‎‎">ar</a></li>
+                            <li class="lang-item5"><a data-lang="cn" href="/cn/" title="中國">cn</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="popup-mainmenu-wrapper-top">
+
+                        <div class="mp-logo"><a data-popup="popup" data-section-name="Rêvelton Suites"
+                                                title="Rêvelton Suites" href="/"></a></div>
+
+                        <ul class="mp-mainmenu">
+                            <li style="cursor: pointer" onclick="loadSegment('.landing-segment')">
+                                <span class="hver">Home</span>
+                                <div class="mm-item-underline">
+                                    <div></div>
+                                </div>
+                            </li>
+
+                            <li style="cursor: pointer" onclick="loadSegment('.why-choose-us')">
+                                <span class="hver">Why choose us?</span>
+                                <div class="mm-item-underline">
+                                    <div></div>
+                                </div>
+                            </li>
+                            <li style="cursor: pointer" onclick="loadSegment('.slide1-bg2-apartment')">
+                                <span class="hver">Rooms</span>
+                                <div class="mm-item-underline">
+                                    <div></div>
+                                </div>
+                            </li>
+                            <li style="cursor: pointer" onclick="loadSegment('.slide1-bg2-places')">
+                                <span class="hver">Places and Events</span>
+                                <div class="mm-item-underline">
+                                    <div></div>
+                                </div>
+                            </li>
+                            <li style="cursor: pointer" onclick="loadSegment('.slide1-bg2-packages')">
+                                <span class="hver">Offers</span>
+                                <div class="mm-item-underline">
+                                    <div></div>
+                                </div>
+                            </li>
+                            <li style="cursor: pointer" onclick="loadSegment('.slide1-bg2-contactus')">
+                                <span class="hver">Contact us</span>
+                                <div class="mm-item-underline">
+                                    <div></div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="mp-left-block-layer">
+
+                        <div class="mp-bookbtn btn btn-green bookBtn" title="Book Now">
+                            <div class="mainmenu-btn-wrapper1">
+                                <div class="original-bg-mainmenu-btn"></div>
+                            </div>
+                            <div class="btn-bg"></div>
+                            <div class="btn-text">Book Now</div>
+
+                        </div>
+
+                        <div class="mp-left-phone">
+                            Book by phone:<br/> <a href="tel:+94112674667">+9411 2 674 667</a> | <a
+                                href="tel:+94778033351">+9477 803 3351</a>
+                        </div>
+
+                        <div class="social-networks mainpage-socnet">
+                            <ul>
+                                <li>
+                                    <div class="btn-bg"></div>
+                                    <a class="fb btn" title="Facebook" target="_blank"></a></li>
+                                <li>
+                                    <div class="btn-bg"></div>
+                                    <a class="youtube btn" title="Youtube" target="_blank"></a></li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="page-transition-blackout"></div>
+
+
+                </div>
+            </div>
+            <!-- main menu -->
+            <!-- r r-->
+
+            <!-- booking menu -->
+            <div class="bookingmenu-wrapper">
+
+                <div class="bookingmenu-opener1"></div>
+                <div class="bookingmenu-opener2"></div>
+
+                <div class="booking-body">
+                    <div class="mainmenu-bg mainmenu-bg1"></div>
+
+                    <div class="mainmenu-mobile-white-head-bg"></div>
+
+                    <div class="popup-mainmenu-wrapper-top">
+                        <div class="mp-logo"><a href="#" data-popup="popup" data-section-name="Rêvelton Suites"
+                                                title="Rêvelton Suites"></a></div>
+                    </div>
+                    <div class="mp-left-block-layer">
+                        <div class="mp-left-phone">
+                            Book by phone:<br/> <a href="tel:+94112674667">+9411 2 674 667</a> | <a
+                                href="tel:+94778033351">+9477 803 3351</a>
+                        </div>
+
+                        <div class="social-networks mainpage-socnet">
+                            <ul>
+                                <li>
+                                    <div class="btn-bg"></div>
+                                    <a class="fb btn" title="Facebook" target="_blank"></a></li>
+                                <li>
+                                    <div class="btn-bg"></div>
+                                    <a class="youtube btn" title="Youtube" target="_blank"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class='booking-gadget'>
+                        <div class='BG-background'></div>
+                        <div class='BG-header'>Book Online</div>
+                        <div class='booking-form'>
+                            <form>
+                                <input type='hidden' name='apartmentId' id='apartmentId' value=''> <!-- apartment ID -->
+                                <div class='BG-field BG-field1'><input type='text' name='arrival' id='arrivalDate'
+                                                                       placeholder='Arrival' title='Arrival' readonly/>
+                                </div>
+                                <div class='BG-field BG-field2'><input type='text' name='departure' id='departureDate'
+                                                                       placeholder='Departure' title='Departure'
+                                                                       readonly/></div>
+                                <div class='BG-field BG-field3'>
+                                    <div class='footer-btn btn btn-green' id='subminBooking'>
+                                        <div class='btn-bg'></div>
+                                        <div class='btn-text'>Check availability</div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="page-transition-blackout"></div>
+
+
+                </div>
+            </div>
+            <!-- booking menu -->
         </div>
 
-       </body>
+        <div class="baron__track">
+            <div class="baron__control baron__up"></div>
+            <div class="baron__free">
+                <div class="baron__bar"></div>
+            </div>
+            <div class="baron__control baron__down"></div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
 
 
 </html>

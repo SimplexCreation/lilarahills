@@ -13019,3 +13019,15 @@ body.ar div.OB-specOffer-info-title div {
 body.ar div.offer-block div.OB-info-block-cont {
     text-align: right;
 }
+.text {
+    color: white;!important;
+    z-index: 100;
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    right: 50px;
+    top: 50px;
+    border-radius: 100px;
+    background: #3CB371;
+    padding : 10px 15px;
+}
