@@ -940,6 +940,26 @@ display: none;
 display: none;
 }
 
+.celebrations{
+    display: none;
+}
+
+.food{
+    display: none;
+}
+
+.families{
+    display: none;
+}
+
+.activities-and-sports{
+    display: none;
+}
+
+.others{
+    display: none;
+}
+
 
 
 div.mp-slider {
@@ -3850,17 +3870,17 @@ div.mainpage-body {
     div.mainpage-body {
         /*
         position: absolute;
-        
+
         width: 100%;
         height: 100%;
-        
-        
+
+
         top: 0px;
         left: 0px;
         overflow:hidden;
         overflow-y: auto;*/
-        
-        
+
+
         position: relative;
         float: left;
         width: 100%;
@@ -13036,6 +13056,7 @@ body.ar div.offer-block div.OB-info-block-cont {
     position: relative;
     padding: 0px;
     margin-bottom: 20px;
+    height: ;
 }
 
 .thumbnail img {

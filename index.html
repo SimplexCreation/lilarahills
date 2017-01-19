@@ -96,15 +96,10 @@
     </script>
 
     <script type="text/javascript">
-
         previousSegment = ".landing-segment";
-        console.log("previousSegment : " + previousSegment)
         function loadSegment(segmentName) {
-
-
-//
             if (!$("#responsivediv").hasClass("position-mainpage")) {
-                console.log("...")
+                console.log("...");
                 "close" == "close" && (window.Aa("#blockContent").css({display: "block"}), window.Aa("div.mainmenu-wrapper").oneTime("300ms", function () {
                     window.Aa("div.logo-mainmenu-btn").removeClass("position-openedmenu")
                 }), window.Aa("body").removeClass("mainmenu-open"), window.Aa("div.mainmenu-wrapper").oneTime("1s", function () {
@@ -116,16 +111,13 @@
                 }))
             }
 
-
-//
-
             if (previousSegment != "--") {
-                console.log("setting " + previousSegment + " visibility to false")
+                console.log("setting " + previousSegment + " visibility to false");
                 $(previousSegment).css({"display": "none"});
 
                 console.log(previousSegment)
             }
-            console.log("setting " + segmentName + " visibility to true")
+            console.log("setting " + segmentName + " visibility to true");
             $(segmentName).css({"display": "initial"});
             previousSegment = segmentName;
 
@@ -141,12 +133,6 @@
                     console.log("to")
                 }
             }, 200);
-
-            if (".slide1-bg2-packages" == segmentName) {
-
-            }
-
-
         }
     </script>
 
@@ -238,10 +224,6 @@
                                 <div></div>
                             </div>
                         </li>
-
-                        <!--<li style="cursor: pointer" onclick="loadSegment('.why-choose-us')">-->
-                        <!--<span class="hver">Why choose us?</span><div class="mm-item-underline"><div></div></div>-->
-                        <!--</li>-->
                         <li style="cursor: pointer" onclick="loadSegment('.slide1-bg2-apartment')">
                             <span class="hver">Rooms</span>
                             <div class="mm-item-underline">
@@ -278,13 +260,15 @@
                                 <img class="landing-segment" src="img/hotel.jpg" style="height: 100%; width: 100%;">
                                 <!-- contact us -->
                                 <div class="slide1-bg2-contactus">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2264.2365615415433!2d80.94067744592523!3d6.8113332985601875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNDgnNDAuOCJOIDgwwrA1NiczMC43IkU!5e0!3m2!1sen!2slk!4v1484806558977" width="1050" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2264.2365615415433!2d80.94067744592523!3d6.8113332985601875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNDgnNDAuOCJOIDgwwrA1NiczMC43IkU!5e0!3m2!1sen!2slk!4v1484806558977"
+                                            width="1050" height="450" frameborder="0" style="border:0"
+                                            allowfullscreen></iframe>
                                     <h6 style="color: black; margin-top: 10px; font-weight: bold;">
                                         Lilara Hills, Enamalketiya, Diyatalawa.
                                     </h6>
-                                    <ul style="margin-top: 50px;margin-right: 600px;text-align: left;text-transform: lowercase;">
+                                    <ul style="margin-top: 50px;margin-left: 300px;text-align: left;text-transform: lowercase;">
                                         <li>email - lilarahills@gmail.com</li>
-                                        <li>mobile - +94718462952, +94778033351</li>
+                                        <li style="margin-left: -50px">mobile - +94718462952, +94778033351</li>
                                         <li>reservations - +94 112674667/8</li>
                                     </ul>
                                 </div>
@@ -299,56 +283,62 @@
                                 <!-- rooms -->
                                 <div class="slide1-bg2-apartment">
                                     <div class="container" id="tourpackages-carousel">
-
-                                    <div>
-
-                                        <div style="float: left; width: 350px;margin-right: 200px">
-                                            <div class="thumbnail">
-                                                <img src="img/rooms.jpeg" alt="">
-                                                <div class="caption">
-                                                    <h4>Double Rooms</h4>
-                                                    <p>for 2-3 persons</p>
-                                                    <p><a href="#" class="btn btn-default btn-xs" role="button" onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                        <div>
+                                            <div style="float: left; width: 350px;margin-right: 200px">
+                                                <div class="thumbnail">
+                                                    <img src="img/rooms.jpeg" alt="">
+                                                    <div class="caption">
+                                                        <h4>Double Rooms</h4>
+                                                        <p>for 2-3 persons</p>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div style="float: left;width: 350px">
-                                            <div class="thumbnail">
-                                                <img src="img/rooms.jpeg" alt="">
-                                                <div class="caption">
-                                                    <h4>Family Rooms </h4>
-                                                    <p>for 4-5 persons</p>
-                                                    <p><a href="#" class="btn btn-default btn-xs" role="button" onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                            <div style="float: left;width: 350px">
+                                                <div class="thumbnail">
+                                                    <img src="img/rooms.jpeg" alt="">
+                                                    <div class="caption">
+                                                        <h4>Family Rooms </h4>
+                                                        <p>for 4-5 persons</p>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div style="float: left;width: 350px;margin-right: 200px">
-                                            <div class="thumbnail">
-                                                <img src="img/rooms.jpeg" alt="">
-                                                <div class="caption">
-                                                    <h4>Group Stay</h4>
-                                                    <p>all 6 rooms for about 20 persons</p>
-                                                    <p><a href="#" class="btn btn-default btn-xs" role="button" onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                            <div style="float: left;width: 350px;margin-right: 200px;">
+                                                <div class="thumbnail">
+                                                    <img src="img/rooms.jpeg" alt="">
+                                                    <div class="caption">
+                                                        <h4>Group Stay</h4>
+                                                        <p>all 6 rooms for about 20 persons</p>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div style="float: left;width: 350px">
-                                            <div class="thumbnail">
-                                                <img src="img/rooms.jpeg" alt="">
-                                                <div class="caption">
-                                                    <h4>Room/s with camping facility on the Lawn</h4>
-                                                    <p>for 10 to 12 persons</p>
-                                                    <p><a href="#" class="btn btn-default btn-xs" role="button" onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                            <div style="float: left;width: 350px">
+                                                <div class="thumbnail">
+                                                    <img src="img/rooms.jpeg" alt="">
+                                                    <div class="caption">
+                                                        <h4>Room/s with camping facility on the Lawn</h4>
+                                                        <p>for 10 to 12 persons</p>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                    </div><!-- End row -->
+                                        </div><!-- End row -->
 
-                                </div><!-- End container -->
+                                    </div><!-- End container -->
                                 </div>
 
                                 <!-- places and events -->
@@ -360,20 +350,30 @@
                                                      title="Adisham Monastery - 45 Minutes from the Hotel"/>
                                             <li><img src="img/Demodara railway station.jpg"
                                                      title="Demodara railway station - 45 Minutes from the Hotel"/>
-                                            <li><img src="img/Nine Arch bridge.jpg" title="Nine Arch bridge - 45 Minutes from the Hotel"/>
-                                            <li><img src="img/Bamarakanda Falls.jpg" title="Bamarakanda Falls - 45 Minutes from the Hotel"/>
-                                            <li><img src="img/Horton Plains.jpg" title="Horton Plains - 60 Minutes from the Hotel"/>
-                                            <li><img src="img/World's End.jpg" title="World's End - 45 Minutes from the Hotel"/>
-                                            <li><img src="img/Haggala Gardens.jpg" title="Haggala Gardens - 45 Minutes from the Hotel"/>
+                                            <li><img src="img/Nine Arch bridge.jpg"
+                                                     title="Nine Arch bridge - 45 Minutes from the Hotel"/>
+                                            <li><img src="img/Bamarakanda Falls.jpg"
+                                                     title="Bamarakanda Falls - 45 Minutes from the Hotel"/>
+                                            <li><img src="img/Horton Plains.jpg"
+                                                     title="Horton Plains - 60 Minutes from the Hotel"/>
+                                            <li><img src="img/World's End.jpg"
+                                                     title="World's End - 45 Minutes from the Hotel"/>
+                                            <li><img src="img/Haggala Gardens.jpg"
+                                                     title="Haggala Gardens - 45 Minutes from the Hotel"/>
                                             <li><img src="img/Sight seeing in Haputale - Beragala area.jpg"
                                                      title="Sight seeing in Beragala - - 20 Minutes from the Hotel"/>
-                                            <li><img src="img/Nuwara Eliya.jpg" title="Nuwara Eliya - 60 Minutes from the Hotel"/>
-                                            <li><img src="img/lipton seat.jpg" title="lipton seat - 45 Minutes from the Hotel"/>
+                                            <li><img src="img/Nuwara Eliya.jpg"
+                                                     title="Nuwara Eliya - 60 Minutes from the Hotel"/>
+                                            <li><img src="img/lipton seat.jpg"
+                                                     title="lipton seat - 45 Minutes from the Hotel"/>
                                             <li><img src="img/Dambetenna Tea Factory.jpg"
                                                      title="Dambetenna Tea Factory - 45 Minutes from the Hotel"/>
-                                            <li><img src="img/Little Adams Peak.jpg" title="Little Adams Peak - 45 Minutes from the Hotel"/>
-                                            <li><img src="img/Ella Rock.jpg" title="Ella Rock - 45 Minutes from the Hotel"/>
-                                            <li><img src="img/Rawana ella.jpg" title="Rawana ella - 45 Minutes from the Hotel"/>
+                                            <li><img src="img/Little Adams Peak.jpg"
+                                                     title="Little Adams Peak - 45 Minutes from the Hotel"/>
+                                            <li><img src="img/Ella Rock.jpg"
+                                                     title="Ella Rock - 45 Minutes from the Hotel"/>
+                                            <li><img src="img/Rawana ella.jpg"
+                                                     title="Rawana ella - 45 Minutes from the Hotel"/>
                                         </ul>
                                     </div>
                                     <!--<div id="bx-pager">-->
@@ -384,58 +384,318 @@
                                     <!--</div>-->
                                 </div>
 
+                                <!-- celebrations -->
+                                <div class="celebrations">
+                                    <div class="container" id="celebrations">
+                                        <div>
+                                            <div style="float: left; width: 300px; margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Party_icon.svg" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>Great Parties</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px">
+                                                <div class="thumbnail">
+                                                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34294-200.png" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>Weddings</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- End row -->
+                                    </div><!-- End container -->
+                                </div>
+
+                                <!-- celebrations -->
+                                <div class="food">
+                                    <div class="container" id="food">
+                                        <div>
+                                            <div style="float: left; width: 300px; margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="https://www.shareicon.net/data/512x512/2016/06/14/780654_people_512x512.png" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>The terrace</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px; margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="https://maxcdn.icons8.com/Share/icon/Food//bar1600.png" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>T bar</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px">
+                                                <div class="thumbnail">
+                                                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/85437-200.png" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>The rose</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px">
+                                                <div class="thumbnail">
+                                                    <img src="https://lh3.googleusercontent.com/cx5WML2xiohPL78t1hRhaqbptNM1vv0MDkM5eFRoXtzB6ETEKa50oiYQOaD7uypsiRU-i_--bJe0t8GWKrzB=s0" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>The glasshouse</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- End row -->
+                                    </div><!-- End container -->
+                                </div>
+
+                                <!-- celebrations -->
+                                <div class="families">
+                                    <div class="container" id="families">
+                                        <div>
+                                            <div style="float: left; width: 300px; margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="https://www.tworiversymca.org/assets/images/gallery/youth_icon.png" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>Kids activities</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px; margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="http://cdn.onlinewebfonts.com/svg/img_188988.svg" alt="" style="height: 230px">
+                                                    <div class="caption">
+                                                        <h4>nearby attraction</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px">
+                                                <div class="thumbnail">
+                                                    <img src="http://lyonslibrary.org/wp-content/uploads/2014/08/learncook.png" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>food for kids</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px; margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="https://image.freepik.com/free-icon/offer-label-ios-7-interface-symbol_318-35360.jpg" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>offers</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px">
+                                                <div class="thumbnail">
+                                                    <img src="http://www.pastbook.com/txt/assets/icon-wedding-150x150.jpg" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>your honeymoon</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- End row -->
+                                    </div><!-- End container -->
+                                </div>
+
+                                <!-- celebrations -->
+                                <div class="activities-and-sports">
+                                    <div class="container" id="activities-and-sports">
+                                        <div>
+                                            <div style="float: left; width: 300px; margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="http://downloadclipart.org/do-upload/clipart/2016-07/Golf_icon.jpg" alt="" style="height: 230px">
+                                                    <div class="caption">
+                                                        <h4>golf</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px;margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="http://www.iconshock.com/img_vista/IPHONE/sports/jpg/polo_icon.jpg" alt="" style="height: 230px">
+                                                    <div class="caption">
+                                                        <h4>polo</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px">
+                                                <div class="thumbnail">
+                                                    <img src="http://downloadicons.net/sites/default/files/swimming-icon-23788.png" alt="" style="height: 230px">
+                                                    <div class="caption">
+                                                        <h4>cold water swimming</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px;margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/19328-200.png" alt="" style="height: 230px">
+                                                    <div class="caption">
+                                                        <h4>walk and hike</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px">
+                                                <div class="thumbnail">
+                                                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/75891-200.png" alt="" style="height: 230px">
+                                                    <div class="caption">
+                                                        <h4>Fox hill motor cross</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div><!-- End row -->
+                                    </div><!-- End container -->
+                                </div>
+
+                                <!-- celebrations -->
+                                <div class="others">
+                                    <div class="container" id="others">
+                                        <div>
+                                            <div style="float: left; width: 300px; margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="http://www.hotelorion.ge/Tbilisi/public/img/icons/icon-gallery.gif" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>gallery</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px; margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="http://simpleicon.com/wp-content/uploads/meeting.png" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>meetings</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px">
+                                                <div class="thumbnail">
+                                                    <img src="http://alvislazarus.com/programs/images/SupplyChain-Workshop.jpg" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>workshops</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.slide1-bg2-contactus')">Inquire</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- End row -->
+                                    </div><!-- End container -->
+                                </div>
 
                                 <!-- packages -->
                                 <div class="slide1-bg2-packages">
-                                    <div style="float: left; margin-right: 80px">
-                                        <h3>CELEBRATIONS</h3>
-                                        <ul style="margin-bottom: 80px">
-                                            <li><img width="42" height="42" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Party_icon.svg"><p>GREAT PARTIES</p></li>
-                                            <li><img width="42" height="42" src="https://d30y9cdsu7xlg0.cloudfront.net/png/34294-200.png"><p>WEDDINGS</p></li>
-                                        </ul>
+                                    <div class="container" id="offers">
+                                        <div>
+                                            <div style="float: left; width: 300px;margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="http://www.free-icons-download.net/images/celebration-toast-icon-85427.png" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>Celebrations</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.celebrations')">View celebrations</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                        <h3>FOOD</h3>
-                                        <ul>
-                                            <li><img width="42" height="42" src="https://cdn0.iconfinder.com/data/icons/housicon/512/terrace-512.png"><p>THE TERRACE</p></li>
-                                            <li><img width="42" height="42" src="https://maxcdn.icons8.com/Share/icon/Food//bar1600.png"><p>T BAR</p></li>
-                                            <li><img width="42" height="42" src="https://d30y9cdsu7xlg0.cloudfront.net/png/85437-200.png"><p>THE ROSE</p></li>
-                                            <li><img width="42" height="42" src="https://cdn1.iconfinder.com/data/icons/cultivate/500/glasshouse-512.png"><p>THE GLASSHOUSE</p></li>
-                                        </ul>
-                                    </div>
-                                    <div style="float: left;margin-right: 50px">
-                                        <h3>FAMILIES</h3>
-                                        <ul>
-                                            <li><img width="42" height="42" src="https://www.tworiversymca.org/assets/images/gallery/youth_icon.png"><p>KIDS ACTIVITIES</p></li>
-                                            <li><img width="42" height="42" src="https://cdn3.iconfinder.com/data/icons/map/500/nearby-512.png"><p>NEARBY ATTRACTIONS</p></li>
-                                            <li><img width="42" height="42" src="https://cdn2.iconfinder.com/data/icons/kids-glyph-black/2048/5505_-_Eating_Food-512.png"><p>FOOD FOR KIDS</p></li>
-                                            <li><img width="42" height="42" src="https://image.freepik.com/free-icon/offer-label-ios-7-interface-symbol_318-35360.jpg"><p>OFFERS</p></li>
-                                            <li><img width="42" height="42" src="https://cdn4.iconfinder.com/data/icons/love-wedding/512/wedding_1-512.png"><p>YOUR HONEYMOON</p></li>
-                                        </ul>
-                                    </div>
-                                    <div style="float: left">
-                                        <h3>ACTIVITIES AND SPORTS</h3>
-                                        <ul>
-                                            <li><img width="42" height="42" src="http://downloadclipart.org/do-upload/clipart/2016-07/Golf_icon.jpg"><p>GOLF</p></li>
-                                            <li><img width="42" height="42" src="http://www.iconshock.com/img_vista/IPHONE/sports/jpg/polo_icon.jpg"><p>POLO</p></li>
-                                            <li><img width="42" height="42" src="https://d30y9cdsu7xlg0.cloudfront.net/png/226-200.png"><p>COLD WATER SWIMMING</p></li>
-                                            <li><img width="42" height="42" src="https://services.garmin.com/appsLibraryBusinessServices_v0/rest/apps/39d3b5e8-67db-4517-93a8-5ec485269635/icon/950cc5e2-e399-4eb7-8afc-2eab72a02982"><p>WALK & HIKE</p></li>
-                                            <li><img width="42" height="42" src="https://cdn2.iconfinder.com/data/icons/sport-items-2/512/racing_flag-512.png"><p>FOX HILL MOTOR CROSS</p></li>
-                                        </ul>
-                                    </div>
-                                    <div style="float: left;margin-top: 50px;margin-left:50px">
-                                        <h3>OTHERS</h3>
-                                        <ul>
-                                            <li><img width="42" height="42" src="http://www.hotelorion.ge/Tbilisi/public/img/icons/icon-gallery.gif"><p>GALLERY</p></li>
-                                            <li><img width="42" height="42" src="http://simpleicon.com/wp-content/uploads/meeting.png"><p>MEETINGS</p></li>
-                                            <li><img width="42" height="42" src="http://alvislazarus.com/programs/images/SupplyChain-Workshop.jpg"><p>WORKSHOPS</p></li>
-                                        </ul>
+                                            <div style="float: left;width: 300px;margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="https://image.freepik.com/free-icon/restaurant-eating-tools-set-of-three-pieces_318-61020.jpg" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>Food</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.food')">View food</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px">
+                                                <div class="thumbnail">
+                                                    <img src="http://www.clipartkid.com/images/785/family-silhouette-CSKAmp-clipart.jpg" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>Families</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.families')">View families</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px;margin-right: 30px">
+                                                <div class="thumbnail">
+                                                    <img src="http://www.mystuc.com/uploads/media/thumbnails/17%20sports.png" alt="" style="height: 214px">
+                                                    <div class="caption">
+                                                        <h4>Activities and Sports</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.activities-and-sports')">View activities<br> and sports</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="float: left;width: 300px">
+                                                <div class="thumbnail">
+                                                    <img src="http://www.lundquist.it/wp-content/uploads/2013/02/iconmonstr-share-2-icon.png" alt="" style="height: 250px">
+                                                    <div class="caption">
+                                                        <h4>Others</h4>
+                                                        <p><a class="btn btn-default btn-xs" role="button"
+                                                              onclick="loadSegment('.others')">View others</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div><!-- End row -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="mp-left-block">
 
                     <div class="objContainer" style="background-image: url(img/mp-leftblock-bg1.svg);"></div>
