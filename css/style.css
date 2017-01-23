@@ -8660,11 +8660,12 @@ div.booking-gadget {
 
 div.BG-background {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 600px;
+    height: 220px;
     background-color: #f1f2ed;
     transform: scale3d(0,1,1);
     transition: all 0.45s ease-in-out 0.8s;
+    border-radius: 10%
 }
 
 body.booking div.BG-background {
